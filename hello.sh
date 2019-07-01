@@ -1,0 +1,1 @@
+( set -x ; for f_png in *.png ; do f="${f_png%.png}" ; convert "$f_png" "$f.pnm" && potrace "$f.pnm" -s -o "$f.svg" ; done )
