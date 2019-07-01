@@ -337,6 +337,9 @@ input[type="radio"].visually-hidden {
 .prev-arrow {
 	left: 215px;
 	background-image: url("../img/others/left-arrow.svg");
+
+	display: none;
+/*	optional - по желанию заказчика*/
 }
 
 .swiper-slide,
@@ -359,6 +362,7 @@ input[type="radio"].visually-hidden {
 
 .hero {
 	background-color: #ffffff;
+	overflow: hidden;
 }
 
 .hero__wrapper	{
@@ -369,21 +373,6 @@ input[type="radio"].visually-hidden {
 	flex-wrap: wrap;
 }
 
-.hero__left-side {
-	flex: 0 0 70%;
-
-	display: flex;
-	flex-direction: column;
-}
-
-.hero__right-side {
-	flex: 1 0 30%;
-
-	display: flex;
-	flex-direction: column;
-	align-items: flex-end;
-}
-
 .hero__title {
 	color: #000000;
 	font-family: var(--oswald);
@@ -392,6 +381,12 @@ input[type="radio"].visually-hidden {
 	line-height: 60px;
 
 	margin-bottom: 40px;
+}
+
+.hero__right-side {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .hero__description {
@@ -419,11 +414,10 @@ input[type="radio"].visually-hidden {
 
 	list-style: none;
 	margin: 0 auto;
-	padding: 0 20px 0 0;
+	padding: 0;
 }
 
 .top-products__list li {
-	margin-left: 20px;
 	margin-bottom: 20px;
 	min-height: 650px;
 	min-width: 320px;
@@ -433,22 +427,6 @@ input[type="radio"].visually-hidden {
 	background-repeat: no-repeat;
 
 	overflow: hidden;
-}
-
-.top-products__list li:first-of-type,
-.top-products__list li:nth-of-type(6n){
-	flex: 1 0 64%;
-	min-width: 580px;
-}
-
-.top-products__list li:nth-of-type(3n + 2) {
-	flex: 1 0 33%;
-	min-width: 320px;
-}
-
-.top-products__list li:nth-of-type(4n),
-.top-products__list li:nth-of-type(4n + 3){
-	flex: 1 0 48%;
 }
 
 .product {
@@ -517,7 +495,7 @@ input[type="radio"].visually-hidden {
 
 .product__layer {
 	width: 100%;
-	height: 172px;
+	/*height: 172px;*/
 	opacity: 0.65;
 	padding: 20px 40px;
 	background-color: #e6e2e2;
@@ -525,6 +503,12 @@ input[type="radio"].visually-hidden {
 
 .top-products__list li:nth-of-type(odd) .product__layer {
 	padding-left: calc(215px + 40px - 20px);
+}
+
+@media (max-width: 1200px) {
+	.product__layer {
+		padding-left: calc(215px + 40px - 20px);
+	}
 }
 
 .product__title {
@@ -544,6 +528,8 @@ input[type="radio"].visually-hidden {
 	font-size: 24px;
 	font-weight: 300;
 	line-height: 32px;
+
+	margin-bottom: 0;
 }
 
 .product__btn {
@@ -569,9 +555,10 @@ input[type="radio"].visually-hidden {
 }
 
 .top-products__list li:hover {
-	filter: drop-shadow(2px 4px 8px #000000);
+	/*filter: drop-shadow(2px 4px 8px #000000);*/
 	background-size: 105%;
-	transition: filter 0.2s ease-in-out, background-size 0.7s ease-in-out;
+	/*transition: filter 0.2s ease-in-out, background-size 2s ease-in-out;*/
+	transition: all 2s ease;
 }
 
 
@@ -625,14 +612,11 @@ input[type="radio"].visually-hidden {
 
 .news__item {
 	flex: 1 1 455px;
-	max-width: 600px;
+	min-width: 420px;
 	min-height: 628px;
-	background-color: #ffffff;
 	margin-bottom: 50px;
-}
 
-.news__item:not(:nth-of-type(3n)) {
-	margin-right: 70px;
+	max-width: 530px;
 }
 
 .single-news {
@@ -675,6 +659,8 @@ input[type="radio"].visually-hidden {
 	flex: 1 1 340px;
 	display: flex;
 	flex-direction: column;
+
+	background-color: #ffffff;
 }
 
 .single-news__info h4 {
@@ -741,21 +727,28 @@ input[type="radio"].visually-hidden {
 
 
 /* Футер - disqus и форма*/
+.footer {
+	overflow: hidden;
+}
+
 .footer__wrapper {
+	width: calc(100% - 215px);
+	
 	margin-left: 215px;
-	padding: 35px 35px 0 35px;
+	padding: 35px 0 0 0;
 
 	display: flex;
 	justify-content: space-between;
 }
 
-.footer__form + .footer__disqus {
-	margin-right: 50px;
+@media (max-width: 1200px) {
+	.footer__wrapper {
+		padding-top: 0;
+	}
 }
 
 .footer__disqus {
-	flex: 1 1 756px;
-	height: 603px;
+	padding: 0 20px 0 30px;
 }
 
 .disqus__tread {
@@ -763,17 +756,21 @@ input[type="radio"].visually-hidden {
 }
 
 .footer__form {
-	/*height: 950px;*/
-	flex: 1 1 800px;
 	order: 2;
 	box-shadow: 6px 0 19px 5px rgba(0, 0, 0, 0.4);
 }
 
 .form__wrapper {
-	/*height: auto;*/
-	width: 60%;
 	max-width: 520px;
+	width: 100%;
 	margin: 90px auto 70px;
+}
+
+@media (max-width: 576px) {
+	.form__wrapper {
+		min-width: 300px;
+		margin: 30px auto;
+	}
 }
 
 .form__title {
