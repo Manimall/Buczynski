@@ -362,7 +362,7 @@ input[type="radio"].visually-hidden {
 
 .hero {
 	background-color: #ffffff;
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 
 .hero__wrapper	{
@@ -371,6 +371,8 @@ input[type="radio"].visually-hidden {
 
 	display: flex;
 	flex-wrap: wrap;
+
+	width: calc(100% - 215px);
 }
 
 .hero__title {
@@ -404,9 +406,9 @@ input[type="radio"].visually-hidden {
 
 /* Блоки с карточками товаров */
 
-.top-products {
-	overflow-x: hidden;
-}
+/*.top-products {*/
+/*	overflow-x: hidden;*/
+/*}*/
 
 .top-products__list {
 	display: flex;
@@ -568,12 +570,14 @@ input[type="radio"].visually-hidden {
 	background: darkgrey url("../img/content/news-background-opa3.jpg") no-repeat fixed center;
 	background-size: cover;
 
-	overflow-x: hidden;
+	/*overflow-x: hidden;*/
 }
 
 .news__wrapper {
 	margin-left: 215px;
 	padding: 60px 45px 60px 60px;
+
+	width: calc(100% - 215px);
 }
 
 .news__title {
@@ -608,6 +612,7 @@ input[type="radio"].visually-hidden {
 	position: relative;
 
 	max-width: 1700px;
+	width: 100%;
 }
 
 .news__item {
@@ -727,13 +732,13 @@ input[type="radio"].visually-hidden {
 
 
 /* Футер - disqus и форма*/
-.footer {
-	overflow: hidden;
-}
+/*.footer {*/
+/*	overflow: hidden;*/
+/*}*/
 
 .footer__wrapper {
 	width: calc(100% - 215px);
-	
+
 	margin-left: 215px;
 	padding: 35px 0 0 0;
 
