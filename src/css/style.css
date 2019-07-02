@@ -1290,6 +1290,7 @@ input[type="radio"].visually-hidden {
 		top: 50%;
 		transform: translateY(-50%);
 		margin-top: 0;
+		margin-left: -10px;
 	}
 
 	.body--overflow .site-logo {
