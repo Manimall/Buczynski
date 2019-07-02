@@ -29,6 +29,10 @@ a {
 	color: #000000;
 }
 
+a:hover {
+	color: initial;
+}
+
 a:hover,
 a:active,
 a:visited {
@@ -81,7 +85,7 @@ input[type="radio"].visually-hidden {
 
 	.header-container {
 		padding: 0 35px;
-		max-width: 1700px;
+		/*max-width: 1700px;*/
 	}
 }
 
@@ -110,8 +114,8 @@ input[type="radio"].visually-hidden {
 
 	box-shadow: 7px -1px 73px #7a7a7a;
 
-	background-color: #000000;
-	opacity: 0.6;
+	background-color: rgba(0, 0, 0, 0.6);
+	opacity: 1;
 }
 
 .left-header__nav {
@@ -217,10 +221,10 @@ input[type="radio"].visually-hidden {
 /* стли для верхнего - фиксированного хедера*/
 
 .header {
-	background-color: #fff;
+	background-color: rgba(255, 255, 255, 0.9);
 	height: 100px;
 	box-shadow: 29px -5px 73px #7a7a7a;
-	opacity: 0.9;
+	opacity: 1;
 
 	position: fixed;
 	left: 0;
@@ -444,14 +448,22 @@ input[type="radio"].visually-hidden {
 	height: 100%;
 
 	position: relative;
+
+	background-position: center;
+	background-size: 110%;
+}
+
+.product:hover {
+	background-size: 100%;
+	transition: all 0.5s ease-in-out;
 }
 
 /*общее правило для всех товаров с флагом*/
 .product--with-flag .product__flag {
 	position: absolute;
 	content: '';
-	width: 140px;
-	height: 140px;
+	width: 152px;
+	height: 152px;
 	z-index: 9;
 	top: 0;
 	right: 0;
@@ -482,6 +494,7 @@ input[type="radio"].visually-hidden {
 
 .product--with-flag .product__flag--sale::before{
 	content: 'Акция';
+	font-size: 31px;
 }
 
 .product--with-flag .product__flag--new {
@@ -490,7 +503,8 @@ input[type="radio"].visually-hidden {
 
 .product--with-flag .product__flag--new::before {
 	content: 'Новинка';
-	transform: rotate(45deg) translate(62px, 0px);
+	transform: rotate(45deg) translate(70px, 4px);
+	font-size: 31px;
 }
 
 .product--with-flag .product__flag--popular {
@@ -499,8 +513,8 @@ input[type="radio"].visually-hidden {
 
 .product--with-flag .product__flag--popular::before {
 	content: 'Популярный';
-	transform: rotate(45deg) translate(55px, 10px);
-	font-size: 24px;
+	transform: rotate(45deg) translate(62px, 10px);
+	font-size: 25px;
 }
 
 .product__layer {
@@ -715,14 +729,16 @@ input[type="radio"].visually-hidden {
 	font-size: 18px;
 }
 
-.single-news:hover {
-	box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.8);
-}
-
 .single-news:hover .single-news__wrapper img {
-	transform: scale(1.1);
+	transform: scale(1.05);
 	transition: all 0.4s ease-in-out;
 }
+
+.single-news__wrapper {
+	overflow: hidden;
+	min-height: 239px;
+}
+
 
 .single-news__wrapper img {
 	width: 100%;
@@ -943,7 +959,7 @@ input[type="radio"].visually-hidden {
 .set-slider {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 
 .set-slider__img-wrapper {
@@ -1095,6 +1111,12 @@ input[type="radio"].visually-hidden {
 	font-weight: 300;
 	line-height: 48px;
 	text-align: center;
+}
+
+.set-slider--prev-arrow,
+.set-slider--next-arrow {
+	width: 60px;
+	height: 60px;
 }
 
 
@@ -1384,7 +1406,7 @@ input[type="radio"].visually-hidden {
 	}
 }
 
-@media (max-width: 530px) {
+@media (max-width: 570px) {
 	.site-nav--active {
 		align-items: center;
 	}
