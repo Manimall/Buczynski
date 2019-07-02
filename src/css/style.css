@@ -1357,7 +1357,6 @@ input[type="radio"].visually-hidden {
 	}
 
 	.icons-mobile {
-		/*display: none;*/
 		transform: translateX(-150%);
 		transition: 0.4s all ease;
 	}
@@ -1382,6 +1381,16 @@ input[type="radio"].visually-hidden {
 	.body--overflow .header {
 		opacity: 0.95;
 	}
+
+	.site-logo {
+		display: none;
+	}
+
+	.next-arrow--promo {
+		width: 120px;
+		height: 110px;
+		background-size: 50%;
+	}
 }
 
 @media (min-width: 1061px) {
@@ -1405,29 +1414,17 @@ input[type="radio"].visually-hidden {
 		align-items: center;
 	}
 
-	.left-nav__link--contacts {
-		margin-top: 10px;
-		margin-left: 0;
-
-		right: 50%;
-		transform: translateX(50%);
-	}
-
 	.left-nav__list {
 		text-align: center;
 	}
 
 	.site-icons {
-		flex-direction: column;
+		margin-top: 8px;
 	}
 
-	.site-icons li:not(:last-of-type) {
-		margin-right: 0;
-		margin-bottom: 20px;
-	}
-
-	.body--overflow .icons-mobile {
-		top: 21px;
+	.cart-count {
+		top: -6px;
+		right: -7px;
 	}
 }
 
