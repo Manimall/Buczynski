@@ -447,7 +447,7 @@ input[type="radio"].visually-hidden {
 }
 
 /*общее правило для всех товаров с флагом*/
-.top-products__list--with-flag .product__flag {
+.product--with-flag .product__flag {
 	position: absolute;
 	content: '';
 	width: 140px;
@@ -464,7 +464,7 @@ input[type="radio"].visually-hidden {
 }
 
 /* общее правило для текста на Флажке*/
-.top-products__list--with-flag .product__flag::before {
+.product--with-flag .product__flag::before {
 	transform: rotate(45deg) translate(50%, 0px);
 	font-size: 30px;
 	font-weight: 300;
@@ -476,28 +476,28 @@ input[type="radio"].visually-hidden {
 	font-family: var(--oswald);
 }
 
-.top-products__list--sale .product__flag {
+.product--with-flag .product__flag--sale {
 	background-color: red;
 }
 
-.top-products__list--sale .product__flag::before{
+.product--with-flag .product__flag--sale::before{
 	content: 'Акция';
 }
 
-.top-products__list--new .product__flag{
+.product--with-flag .product__flag--new {
 	background-color: #26C425;
 }
 
-.top-products__list--new .product__flag::before {
+.product--with-flag .product__flag--new::before {
 	content: 'Новинка';
 	transform: rotate(45deg) translate(62px, 0px);
 }
 
-.top-products__list--popular .product__flag {
+.product--with-flag .product__flag--popular {
 	background-color: #8A618B;
 }
 
-.top-products__list--popular .product__flag::before {
+.product--with-flag .product__flag--popular::before {
 	content: 'Популярный';
 	transform: rotate(45deg) translate(55px, 10px);
 	font-size: 24px;
