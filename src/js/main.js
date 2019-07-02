@@ -11,11 +11,12 @@ const swiper = new Swiper('.swiper-container', {
 });
 
 (function() {
-	const burger = document.querySelector(`.hambergerIcon`);
+	const menu = document.querySelector(`.menu`);
+	const burger = menu.querySelector(`.hambergerIcon`);
 	const nav = document.querySelector(`.site-nav`);
 	const body = document.querySelector(`body`);
 
-	burger.addEventListener(`click`, () => {
+	menu.addEventListener(`click`, () => {
 		burger.classList.toggle(`open`);
 		nav.classList.toggle(`site-nav--active`);
 		body.classList.toggle(`body--overflow`);
