@@ -319,20 +319,15 @@ input[type="radio"].visually-hidden {
 .prev-arrow {
 	top: 50%;
 	transform: translateY(-50%);
-
 	position: absolute;
-
 	width: 174px;
 	height: 162px;
 	min-height: unset;
-
 	opacity: 0.8;
-
-	background-color: #d5d6d7;
+	background-color: #bec2c7;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 83px 81px;
-
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -1599,7 +1594,7 @@ input[type="radio"].visually-hidden {
 
 @media (max-width: 768px) {
 	.set-slider__img-wrapper {
-		 max-width: 160px;
+		 max-width: 180px;
 		 min-width: auto;
 	}
 

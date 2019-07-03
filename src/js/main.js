@@ -28,6 +28,12 @@
 				slidesPerView: 'auto',
 				watchSlidesVisibility: true,
 				freeMode: true,
+			},
+			768: {
+				spaceBetween: 30,
+			},
+			500: {
+				spaceBetween: 20,
 			}
 		}
 	});
