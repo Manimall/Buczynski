@@ -861,7 +861,7 @@ input[type="radio"].visually-hidden {
 /* страница Сет */
 .set__wrapper {
 	margin-left: 215px;
-	padding: 60px 45px 20px 60px;
+	padding: 60px 45px 20px 50px;
 	/* max-width: 1700px; */
 }
 
@@ -937,14 +937,15 @@ input[type="radio"].visually-hidden {
 	flex-direction: column;
 	justify-content: space-between;
 	overflow: visible;
-	min-height: 865px;
-	max-width: 1204px;
+	min-height: 900px;
+	max-width: 1200px;
+	padding-left: 28px;
 }
 
 .single-set__slider {
 	margin: auto 0 0 0;
-	overflow: visible;
-	max-width: 100%;
+	/* overflow: visible; */
+	/* max-width: 128%; */
 }
 
 .set-item {
@@ -953,6 +954,7 @@ input[type="radio"].visually-hidden {
 
 .single-set__inner {
 	display: flex;
+	overflow: hidden;
 }
 
 .single-set__preview {
@@ -961,7 +963,7 @@ input[type="radio"].visually-hidden {
 
 .set-slider {
 	height: 100%;
-	overflow: hidden;
+	/* overflow: hidden; */
 	/* position: absolute; */
 	/* top: 0; */
 	z-index: 1;
@@ -977,7 +979,7 @@ input[type="radio"].visually-hidden {
 }
 
 .set-slider__img-wrapper {
-	max-width: 220px;
+	/* max-width: 220px; */
 	min-width: 200px;
 	width: 100%;
 }
@@ -1123,9 +1125,9 @@ input[type="radio"].visually-hidden {
 .set-slider--next-arrow {
 	width: 55px;
 	height: 50px;
-
 	display: flex;
 	top: 100px;
+	z-index: 9999;
 	background-size: 60%;
 }
 

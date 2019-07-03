@@ -14,14 +14,14 @@
 
 (function() {
 	const swSet = new Swiper('.single-set__slider', {
+		loop: false,
 		loop: true,
 		navigation: {
 			nextEl: '.set-slider--next-arrow ',
 			prevEl: '.set-slider--prev-arrow ',
 		},
-		// Default parameters
 		slidesPerView: 4,
-		spaceBetween: 40,
+		// spaceBetween: 40,
 		// slidesPerGroup: 1,
 		loopFillGroupWithBlank: true,
 		// Responsive breakpoints
