@@ -1,23 +1,48 @@
 // Слайдер на главной в Промо-блоке
 
+(function() {
+	const swiperMain = new Swiper('.promo-swiper', {
+		slidesPerView: 1,
+		loop: true,
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+	});
+})();
 
-const swiperMain = new Swiper('.promo-swiper', {
-	slidesPerView: 1,
-	loop: true,
-	navigation: {
-		nextEl: '.swiper-button-next',
-		prevEl: '.swiper-button-prev',
-	},
-});
 
-const swiperSet = new Swiper('.single-set__slider', {
-	slidesPerView: 1,
-	loop: true,
-	navigation: {
-		nextEl: '.set-slider--next-arrow ',
-		prevEl: '.set-slider--prev-arrow ',
-	},
-});
+(function() {
+	const swSet = new Swiper('.single-set__slider', {
+		loop: true,
+		navigation: {
+			nextEl: '.set-slider--next-arrow ',
+			prevEl: '.set-slider--prev-arrow ',
+		},
+		// Default parameters
+		slidesPerView: 4,
+		spaceBetween: 40,
+		// slidesPerGroup: 1,
+		loopFillGroupWithBlank: true,
+		// Responsive breakpoints
+		// breakpoints: {
+		// 	// when window width is <= 320px
+		// 	1700: {
+		// 		slidesPerView: 3,
+		// 		spaceBetween: 20,
+		// 	},
+		// 	// when window width is <= 480px
+		// 	1400: {
+		// 		slidesPerView: 4,
+		// 	},
+		// 	// when window width is <= 640px
+		// 	640: {
+		// 		slidesPerView: 3,
+		// 	}
+		// }
+	});
+})();
+
 
 (function() {
 	const menu = document.querySelector(`.menu`);

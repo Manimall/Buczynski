@@ -937,13 +937,14 @@ input[type="radio"].visually-hidden {
 	flex-direction: column;
 	justify-content: space-between;
 	overflow: visible;
-	min-height: 850px;
+	min-height: 865px;
 	max-width: 1204px;
 }
 
 .single-set__slider {
 	margin: auto 0 0 0;
 	overflow: visible;
+	max-width: 100%;
 }
 
 .set-item {
@@ -959,10 +960,16 @@ input[type="radio"].visually-hidden {
 }
 
 .set-slider {
-	display: flex;
+	height: 100%;
 	overflow: hidden;
-	/* flex-wrap: wrap; */
+	/* position: absolute; */
+	/* top: 0; */
+	z-index: 1;
+	/* left: 0; */
 	justify-content: space-between;
+	width: 100%;
+	display: flex;
+	/* flex-wrap: wrap; */
 }
 
 .set-slider__img-wrapper:not(:last-of-type) {
