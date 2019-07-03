@@ -1687,6 +1687,7 @@ input[type="radio"].visually-hidden {
 	.set-slider__img-wrapper {
 		max-width: 140px;
 		width: 34%;
+		min-width: 120px;
 	}
 
 	.single-set__left-side {

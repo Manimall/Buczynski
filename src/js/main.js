@@ -31,9 +31,13 @@
 			},
 			768: {
 				spaceBetween: 30,
+				slidesPerView: 'auto',
+				watchSlidesVisibility: true,
 			},
 			500: {
 				spaceBetween: 20,
+				slidesPerView: 'auto',
+				watchSlidesVisibility: true,
 			}
 		}
 	});
