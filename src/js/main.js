@@ -23,14 +23,11 @@
 		spaceBetween: 40,
 		loopFillGroupWithBlank: false,
 		breakpoints: {
-			// when window width is <= 320px
-			1600: {
-				slidesPerView: 3,
-			},
-			1350: {
+			// when window width is <= 1500px
+			1500: {
 				slidesPerView: 'auto',
-				spaceBetween: 30,
 				watchSlidesVisibility: true,
+				freeMode: true,
 			}
 		}
 	});
