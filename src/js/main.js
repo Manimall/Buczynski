@@ -15,31 +15,24 @@
 (function() {
 	const swSet = new Swiper('.single-set__slider', {
 		loop: false,
-		loop: true,
 		navigation: {
 			nextEl: '.set-slider--next-arrow ',
 			prevEl: '.set-slider--prev-arrow ',
 		},
 		slidesPerView: 4,
-		// spaceBetween: 40,
-		// slidesPerGroup: 1,
-		loopFillGroupWithBlank: true,
-		// Responsive breakpoints
-		// breakpoints: {
-		// 	// when window width is <= 320px
-		// 	1700: {
-		// 		slidesPerView: 3,
-		// 		spaceBetween: 20,
-		// 	},
-		// 	// when window width is <= 480px
-		// 	1400: {
-		// 		slidesPerView: 4,
-		// 	},
-		// 	// when window width is <= 640px
-		// 	640: {
-		// 		slidesPerView: 3,
-		// 	}
-		// }
+		spaceBetween: 40,
+		loopFillGroupWithBlank: false,
+		breakpoints: {
+			// when window width is <= 320px
+			1600: {
+				slidesPerView: 3,
+			},
+			1350: {
+				slidesPerView: 'auto',
+				spaceBetween: 30,
+				watchSlidesVisibility: true,
+			}
+		}
 	});
 })();
 
