@@ -527,19 +527,15 @@ input[type="radio"].visually-hidden {
 .product--with-flag .product__flag {
 	position: absolute;
 	content: '';
-	width: 152px;
-	height: 152px;
+	width: 163px;
+	height: 163px;
 	z-index: 9;
 	top: 0;
 	right: 0;
 	margin-bottom: 0;
-
 	-webkit-clip-path: polygon(100% 0, 0 0, 100% 100%);
-
 	clip-path: polygon(100% 0, 0 0, 100% 100%);
-
 	-webkit-filter: drop-shadow(0 0 5px #000);
-
 	filter: drop-shadow(0 0 5px #000);
 	background: black;
 }
@@ -553,9 +549,7 @@ input[type="radio"].visually-hidden {
 	font-weight: 300;
 	width: 100%;
 	position: absolute;
-
 	color: #ffffff;
-
 	font-family: var(--oswald);
 }
 
@@ -577,10 +571,11 @@ input[type="radio"].visually-hidden {
 
 .product--with-flag .product__flag--new::before {
 	content: 'Новинка';
-	-webkit-transform: rotate(45deg) translate(68px, 4px);
-	-ms-transform: rotate(45deg) translate(68px, 4px);
-	transform: rotate(45deg) translate(68px, 4px);
-	font-size: 31px;
+	-webkit-transform: rotate(45deg) translate(68px, -20px);
+	-ms-transform: rotate(45deg) translate(68px, -20px);
+	transform: rotate(45deg) translate(68px, -20px);
+	font-size: 29px;
+	width: auto;
 }
 
 .product--with-flag .product__flag--popular {
@@ -588,13 +583,14 @@ input[type="radio"].visually-hidden {
 }
 
 .product--with-flag .product__flag--popular::before {
+	width: auto;
 	content: 'Популярный';
 	font-size: 27px;
-	bottom: 0;
+	top: 50%;
 	left: 50%;
-	-webkit-transform: rotate(45deg) translate(-50%, -16px);
-	-ms-transform: rotate(45deg) translate(-50%, -16px);
-	transform: rotate(45deg) translate(-50%, -16px);
+	-webkit-transform: rotate(45deg) translate(-50%, -6%);
+	-ms-transform: rotate(45deg) translate(-50%, -6%);
+	transform: rotate(45deg) translate(-50%, -6%);
 	-webkit-transform-origin: center;
 	-ms-transform-origin: center;
 	transform-origin: center;
