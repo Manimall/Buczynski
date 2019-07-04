@@ -844,7 +844,7 @@ input[type="radio"].visually-hidden {
 .set__wrapper {
 	margin-left: 215px;
 	padding: 60px 45px 20px 50px;
-	/* max-width: 1700px; */
+	max-width: 1700px;
 }
 
 .set-hero {
@@ -1061,7 +1061,7 @@ input[type="radio"].visually-hidden {
 	padding-right: 4px;
 }
 
-.single-set__order-link {
+.btn {
 	position: relative;
 	right: 0;
 	bottom: 0;
@@ -1138,6 +1138,254 @@ input[type="radio"].visually-hidden {
 .material__sizes {
 	margin-bottom: 30px;
 }
+
+
+
+/* Корзина */
+.cart__wrapper {
+	margin-left: 215px;
+	margin-bottom: 62px;
+	padding: 160px 45px 20px 70px;
+	max-width: 1700px;
+}
+
+.cart__title {
+	color: #000000;
+	font-family: var(--oswald);
+	font-size: 72px;
+	font-weight: 300;
+	line-height: 1.5;
+
+	margin-bottom: 50px;
+}
+
+.cart__list {
+	display: flex;
+	flex-direction: column;
+}
+
+.cart__item:not(:last-of-type) {
+	margin-bottom: 50px;
+}
+
+.cart__link {
+	width: 100%;
+	height: 100%;
+	display: flex;
+
+	box-shadow: 0 0 38px rgba(209, 209, 209, 0.56);
+}
+
+.cart__info {
+	order: 2;
+	background-color: #ffffff;
+	padding: 28px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.cart__img-wrapper {
+	order: 1;
+	width: 527px;
+	flex: 1 0 450px;
+	height: 296px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.cart__control {
+	order: 3;
+	flex: 1 0 151px;
+	width: 132px;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	background-color: rgb(87, 87, 87);
+}
+
+.cart__info figure img {
+	width: 57px;
+	height: 57px;
+}
+
+.cart__info figure {
+	display: flex;
+	align-items: center;
+	margin: 0;
+	max-width: 300px;
+}
+
+.cart__info figcaption {
+	color: #000000;
+	font-family: var(--montserrat);
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 24px;
+	max-width: 135px;
+	margin-left: 20px;
+}
+
+.cart__info h3 {
+	color: #000000;
+	font-family: var(--oswald);
+	font-size: 45px;
+	font-weight: 300;
+	line-height: 60px;
+	margin-bottom: 0;
+}
+
+.cart__info p {
+	color: #000000;
+	font-family: var(--montserrat);
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 1.5;
+	padding-right: 50px;
+}
+
+.cart__order {
+	margin-top: 56px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.cart__control button {
+	border: none;
+	padding: 0;
+	background-color: transparent;
+}
+
+.cart__control-close {
+	position: absolute;
+	right: 15px;
+	top: 15px;
+	height: 30px;
+	width: 30px;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.cart__control-close::after,
+.cart__control-close::before {
+	background-color: #fff;
+	content: "";
+	height: 3px;
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	transform: translate(-50%, -50%);
+}
+
+.cart__control-close::before {
+	transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.cart__control-close::after {
+	transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.cart__control-wrapper {
+	display: flex;
+	flex-direction: column;
+	margin: auto auto 15px auto;
+	min-height: 165px;
+	align-items: center;
+	color: #ffffff;
+}
+
+.cart__count,
+.operator,
+.cart__price {
+	font-family: var(--oswald);
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 1.5;
+}
+
+.cart__currency {
+	font-family: var(--oswald);
+	font-size: 12px;
+	font-weight: 300;
+}
+
+.cart__sum {
+	font-family: var(--oswald);
+	font-size: 24px;
+	font-weight: 300;
+}
+
+.cart__actions-wrapper button {
+	border-radius: 50%;
+	width: 48px;
+	height: 48px;
+
+	position: relative;
+}
+
+.cart__actions-wrapper .cart__increase {
+	background-color: #464646;
+	margin-right: 13px;
+}
+
+.cart__actions-wrapper .cart__decrease {
+	background-color: #797979;
+}
+
+.cart__actions-wrapper {
+	display: flex;
+}
+
+.cart__cost {
+	margin-bottom: 27px;
+}
+
+.cart__summary {
+	margin-bottom: 37px;
+}
+
+.cart__decrease::before,
+.cart__decrease::after,
+.cart__increase::before {
+	position: absolute;
+	content: '';
+	display: inline-block;
+
+	top: 50%;
+	left: 50%;
+
+	width: 16px;
+	height: 2px;
+
+	background-color: #ffffff;
+}
+
+.cart__decrease::after,
+.cart__increase::before {
+	transform: translate(-50%, -50%);
+}
+
+.cart__decrease::before {
+	transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.cart__sum {
+	color: #000000;
+	font-family: var(--oswald);
+	font-size: 36px;
+	font-weight: 300;
+	line-height: 1.5;
+	margin: 0;
+}
+
+.cart__sum-currency {
+	font-size: 26px;
+}
+
+
 
 
 

@@ -1,5 +1,4 @@
 // Слайдер на главной в Промо-блоке
-
 (function() {
 	const swiperMain = new Swiper('.promo-swiper', {
 		slidesPerView: 1,
@@ -11,7 +10,7 @@
 	});
 })();
 
-
+// Слайдер в карточке товара на странице Товара и Сета
 (function() {
 	const swSet = new Swiper('.single-set__slider', {
 		loop: false,
