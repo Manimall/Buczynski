@@ -451,9 +451,9 @@ input[type="radio"].visually-hidden {
 .product--with-flag .product__flag {
 	position: absolute;
 	content: '';
-	width: 163px;
-	height: 163px;
-	z-index: 9;
+	width: 163.57px;
+	height: 163.57px;
+	z-index: 11;
 	top: 0;
 	right: 0;
 	margin-bottom: 0;
@@ -511,9 +511,10 @@ input[type="radio"].visually-hidden {
 
 .product__layer {
 	width: 100%;
-	opacity: 0.65;
+	opacity: 1;
+	position: relative;
 	padding: 20px 40px;
-	background-color: #e6e2e2;
+	background-color: rgba(230, 226, 226, 0.65);
 }
 
 .top-products__list li:nth-of-type(odd) .product__layer {
