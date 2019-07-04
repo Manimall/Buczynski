@@ -566,6 +566,9 @@ input[type="radio"].visually-hidden {
 .product--with-flag .product__flag--sale::before{
 	content: 'Акция';
 	font-size: 31px;
+	-webkit-transform: rotate(45deg) translate(50%, 0);
+	-ms-transform: rotate(45deg) translate(50%, 0);
+	transform: rotate(45deg) translate(50%, 0);
 }
 
 .product--with-flag .product__flag--new {
@@ -578,7 +581,6 @@ input[type="radio"].visually-hidden {
 	-ms-transform: rotate(45deg) translate(68px, 4px);
 	transform: rotate(45deg) translate(68px, 4px);
 	font-size: 31px;
-	/* text-align: center; */
 }
 
 .product--with-flag .product__flag--popular {
@@ -587,15 +589,20 @@ input[type="radio"].visually-hidden {
 
 .product--with-flag .product__flag--popular::before {
 	content: 'Популярный';
-	-webkit-transform: rotate(45deg) translate(62px, 10px);
-	-ms-transform: rotate(45deg) translate(62px, 10px);
-	transform: rotate(45deg) translate(62px, 10px);
-	font-size: 25px;
+	font-size: 27px;
+	bottom: 0;
+	left: 50%;
+	-webkit-transform: rotate(45deg) translate(-50%, -16px);
+	-ms-transform: rotate(45deg) translate(-50%, -16px);
+	transform: rotate(45deg) translate(-50%, -16px);
+	-webkit-transform-origin: center;
+	-ms-transform-origin: center;
+	transform-origin: center;
+	text-align: left;
 }
 
 .product__layer {
 	width: 100%;
-	/*height: 172px;*/
 	opacity: 0.65;
 	padding: 20px 40px;
 	background-color: #e6e2e2;
@@ -614,12 +621,12 @@ input[type="radio"].visually-hidden {
 .product__title {
 	color: #000000;
 	font-family: var(--oswald);
-	font-size: 60px;
+	font-size: 56px;
 	font-weight: 300;
-	line-height: 60px;
+	line-height: 1.4;
 	width: 87%;
 	text-transform: uppercase;
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 }
 
 .product__description {
@@ -628,8 +635,9 @@ input[type="radio"].visually-hidden {
 	font-size: 24px;
 	font-weight: 300;
 	line-height: 32px;
-
 	margin-bottom: 0;
+	width: 87%;
+	margin-top: 15px;
 }
 
 .product__btn {
@@ -2319,13 +2327,6 @@ input[type="radio"].visually-hidden {
 		width: 100%;
 		min-width: auto;
 	}
-
-	.product--with-flag .product__flag--popular::before {
-		-webkit-transform: rotate(45deg) translate(62px, 10px);
-		-ms-transform: rotate(45deg) translate(62px, 10px);
-		transform: rotate(45deg) translate(62px, 10px);
-		font-size: 24px;
-	}
 }
 
 
@@ -2493,12 +2494,6 @@ input[type="radio"].visually-hidden {
 		background-color: transparent;
 		opacity: 1;
 		right: -26px;
-	}
-
-	.product--with-flag .product__flag--new::before {
-		-webkit-transform: rotate(45deg) translate(54px, 12px);
-		-ms-transform: rotate(45deg) translate(54px, 12px);
-		transform: rotate(45deg) translate(54px, 12px);
 	}
 }
 
