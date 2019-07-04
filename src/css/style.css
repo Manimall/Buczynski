@@ -1576,7 +1576,7 @@ input[type="radio"].visually-hidden {
 	}
 
 	.product__layer {
-		padding: 20px 40px;
+		padding: 20px 40px 20px 14px;
 	}
 
 	.top-products__list li:nth-of-type(odd) .product__layer {
@@ -2075,7 +2075,7 @@ input[type="radio"].visually-hidden {
 	}
 
 	.product--with-flag .product__flag::before {
-		transform: rotate(45deg) translate(54px, 4px);
+		transform: rotate(45deg) translate(54px, 12px);
 	}
 }
 
