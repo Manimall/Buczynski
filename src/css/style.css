@@ -2074,7 +2074,7 @@ input[type="radio"].visually-hidden {
 		right: -26px;
 	}
 
-	.product--with-flag .product__flag::before {
+	.product--with-flag .product__flag--new::before {
 		transform: rotate(45deg) translate(54px, 12px);
 	}
 }
