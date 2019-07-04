@@ -1928,6 +1928,8 @@ input[type="radio"].visually-hidden {
 @media (max-width: 570px) {
 	.site-nav--active {
 		align-items: center;
+		padding-right: 15px;
+		padding-left: 15px;
 	}
 
 	.form__wrapper {
