@@ -18,6 +18,7 @@ html {
 	box-sizing: inherit;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: none;
 }
 
 body {
@@ -489,8 +490,9 @@ input[type="radio"].visually-hidden {
 
 .product--with-flag .product__flag--new::before {
 	content: 'Новинка';
-	transform: rotate(45deg) translate(64px, 4px);
+	transform: rotate(45deg) translate(68px, 4px);
 	font-size: 31px;
+	/* text-align: center; */
 }
 
 .product--with-flag .product__flag--popular {
@@ -1395,6 +1397,11 @@ input[type="radio"].visually-hidden {
 	font-size: 26px;
 }
 
+.modal--buy {
+	width: 815px;
+	height: 1078px;
+	box-shadow: 0 0 50px rgba(0, 0, 0, 0.56);
+}
 
 
 
@@ -2065,6 +2072,10 @@ input[type="radio"].visually-hidden {
 		background-color: transparent;
 		opacity: 1;
 		right: -26px;
+	}
+
+	.product--with-flag .product__flag::before {
+		transform: rotate(45deg) translate(54px, 4px);
 	}
 }
 
