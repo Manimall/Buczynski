@@ -228,7 +228,7 @@
 						<span class="cart__sum-price">68000</span>
 						<span class="cart__sum-currency">грн.</span>
 					</p>
-					<a href="#" class="btn cart__to-order">Оформить заказ</a>
+					<a href="#" class="btn cart__to-order" data-toggle="modal" data-target="#exampleModal">Оформить заказ</a>
 				</div>
 			</div>
 		</section>
@@ -315,63 +315,75 @@
 		</div>
 	</footer>
 
-	<section class="modal modal--buy">
-		<div class="modal__wrapper">
-			<h2 class="modal__title">Оформление заказа</h2>
-			<p class="modal__description">
-				Описание формы оформление заказа
-			</p>
+	<!-- Modal -->
+	<section class="modal fade modal--buy" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+					 aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal__wrapper">
+					<h2 class="modal__title">Оформление заказа</h2>
+					<p class="modal__description">
+						Описание формы оформление заказа
+					</p>
 
-			<form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
-				<div class="form__fieldset form__main-info">
-					<span class="form__legend">Информация</span>
-					<ul class="form__main-info-list">
-						<li class="form__item">
-							<label class="form__label visually-hidden" for="your-name">Ваше имя (обязательно)</label>
-							<input class="form__input" id="your-name" type="text" name="name" placeholder="Ваше имя (обязательно)">
-						</li>
+					<form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
+						<div class="form__fieldset form__main-info">
+							<span class="form__legend">Информация</span>
+							<ul class="form__main-info-list">
+								<li class="form__item">
+									<label class="form__label visually-hidden" for="your-name">Ваше имя (обязательно)</label>
+									<input class="form__input" id="your-name" type="text" name="your-name" placeholder="Ваше имя (обязательно)">
+								</li>
 
-						<li class="form__item">
-							<label class="form__label visually-hidden" for="your-phone">Ваш телефон (обязательно)</label>
-							<input class="form__input" id="your-phone" type="tel" name="phone" placeholder="Ваш телефон (обязательно)">
-						</li>
+								<li class="form__item">
+									<label class="form__label visually-hidden" for="your-phone">Ваш телефон (обязательно)</label>
+									<input class="form__input" id="your-phone" type="tel" name="your-phone" placeholder="Ваш телефон (обязательно)">
+								</li>
 
-						<li class="form__item">
-							<label class="form__label visually-hidden" for="your-message">Примечание к заказу</label>
-							<textarea class="form__textarea form__input" id="your-message" name="message" placeholder="Примечание к заказу"></textarea>
-						</li>
-					</ul>
+								<li class="form__item">
+									<label class="form__label visually-hidden" for="your-message">Примечание к заказу</label>
+									<textarea class="form__textarea form__input" id="your-message" name="message" placeholder="Примечание к заказу"></textarea>
+								</li>
+							</ul>
+						</div>
+
+						<div class="form__fieldset form__address">
+							<span class="form__legend">Адрес доставки</span>
+							<label class="form__label visually-hidden" for="address">Город, Название улица, Номер дома</label>
+							<input class="form__input" id="address" type="text" name="name" placeholder="Город, Название улица, Номер дома">
+						</div>
+
+						<div class="form__fieldset form__payment">
+							<span class="form__legend">Способ оплаты</span>
+							<label class="form__label visually-hidden" for="form__payment-methods">Выберете способ оплаты</label>
+							<div class="form__select-wrapper">
+								<select class="form__select" name="payment-methods" id="form__payment-methods">
+									<option value="" selected style="display:none;" disabled>Выберете способ оплаты</option>
+									<option value="by-card">Картой</option>
+									<option value="by-cash">Наличными при получении</option>
+									<option value="by-PayPal">PayPal</option>
+									<option value="by-Y.cashbox">Яндекс.Касса</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="form__submit-wrapper">
+							<button class="form__submit btn" type="submit">Оформить заказ</button>
+						</div>
+					</form>
 				</div>
 
-				<div class="form__fieldset form__address">
-					<span class="form__legend">Адрес доставки</span>
-					<label class="form__label visually-hidden" for="address">Город, Название улица, Номер дома</label>
-					<input class="form__input" id="address" type="text" name="name" placeholder="Город, Название улица, Номер дома">
-				</div>
-
-				<div class="form__fieldset form__payment">
-					<span class="form__legend">Способ оплаты</span>
-					<label class="form__label visually-hidden" for="form__payment-methods">Выберете способ оплаты</label>
-					<div class="form__select-wrapper">
-						<select class="form__select" name="payment-methods" id="form__payment-methods">
-							<option value="" selected style="display:none;" disabled>Выберете способ оплаты</option>
-							<option value="by-card">Картой</option>
-							<option value="by-cash">Наличными при получении</option>
-							<option value="by-PayPal">PayPal</option>
-							<option value="by-Y.cashbox">Яндекс.Касса</option>
-						</select>
-					</div>
-				</div>
-
-				<div class="form__submit-wrapper">
-					<button class="form__submit btn" type="submit">Оформить заказ</button>
-				</div>
-			</form>
+				<button type="button" class="modal__popup-close"></button>
+			</div>
 		</div>
-		<button type="button" class="modal__popup-close"></button>
 	</section>
 
-	<script src="js/swiper.min.js"></script>
+	<script
+		src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+		crossorigin="anonymous"></script>
+	<script src="libs/swiper.min.js"></script>
+	<script src="libs/bootstrap.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>

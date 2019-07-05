@@ -57,55 +57,55 @@
 })();
 
 (function() {
-	const formOrderOpenBtn = document.querySelector(`.cart__to-order`);
+	// const formOrderOpenBtn = document.querySelector(`.cart__to-order`);
+	const body = document.querySelector(`body`);
 	const orderPopup = document.querySelector(`.modal--buy`);
-	const orderForm = orderPopup.querySelector(`.modal__form`);
+	// const orderForm = orderPopup.querySelector(`.modal__form`);
 	const formOrderCloseBtn = orderPopup.querySelector(`.modal__popup-close`);
 
-	const userName = orderForm.querySelector('#your-name');
-	const userPhone = orderForm.querySelector('#your-phone');
-
-	const userAddress = orderForm.querySelector(`#address`);
-	//добавить проверку на заполненность селекта с выбором способа оплаты
-
-	let isStorageSupport = true;
-	let storage = '';
-
-	try {
-		storage = localStorage.getItem('userName');
-	} catch (err) {
-		isStorageSupport = false;
-	}
-
-	formOrderOpenBtn.addEventListener('click', function (evt) {
-		evt.preventDefault();
-		orderPopup.classList.add('modal--open');
-
-		if (storage) {
-			userName.value = storage;
-			userPhone.focus();
-		} else {
-			userName.focus();
-		}
-	});
-
-	orderForm.addEventListener('submit', function (evt) {
-		if (!userName.value || !userPhone.value || !userAddress) {
-			evt.preventDefault();
-			orderPopup.classList.remove("modal--error");
-			orderPopup.offsetWidth = orderPopup.offsetWidth;
-			orderPopup.classList.add('modal--error');
-		} else {
-			if (isStorageSupport) {
-				localStorage.setItem(`userName`, userName.value);
-			}
-		}
-	});
-
+	// const userName = orderForm.querySelector('#your-name');
+	// const userPhone = orderForm.querySelector('#your-phone');
+	//
+	// const userAddress = orderForm.querySelector(`#address`);
+	// //добавить проверку на заполненность селекта с выбором способа оплаты
+	//
+	// let isStorageSupport = true;
+	// let storage = '';
+	//
+	// try {
+	// 	storage = localStorage.getItem('userName');
+	// } catch (err) {
+	// 	isStorageSupport = false;
+	// }
+	//
+	// formOrderOpenBtn.addEventListener('click', function (evt) {
+	// 	evt.preventDefault();
+	// 	orderPopup.classList.add('modal--open');
+	//
+	// 	if (storage) {
+	// 		userName.value = storage;
+	// 		userPhone.focus();
+	// 	} else {
+	// 		userName.focus();
+	// 	}
+	// });
+	//
+	// orderForm.addEventListener('submit', function (evt) {
+	// 	if (!userName.value || !userPhone.value || !userAddress) {
+	// 		evt.preventDefault();
+	// 		orderPopup.classList.remove("modal--error");
+	// 		orderPopup.offsetWidth = orderPopup.offsetWidth;
+	// 		orderPopup.classList.add('modal--error');
+	// 	} else {
+	// 		if (isStorageSupport) {
+	// 			localStorage.setItem(`userName`, userName.value);
+	// 		}
+	// 	}
+	// });
+	//
 	const closePopup = (evt) => {
 		evt.preventDefault();
-		orderPopup.classList.remove('modal--open');
-		orderPopup.classList.remove('modal--error');
+		$('.modal--buy').modal('hide');
 	};
 
 	formOrderCloseBtn.addEventListener('click', closePopup);
