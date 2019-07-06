@@ -580,7 +580,7 @@ input[type="radio"].visually-hidden {
 	background: darkgrey url("../img/content/news-background-opa3.jpg") no-repeat fixed center;
 	background-size: cover;
 
-	/*overflow-x: hidden;*/
+	overflow-x: hidden;
 }
 
 .news__wrapper {
@@ -608,17 +608,22 @@ input[type="radio"].visually-hidden {
 	font-size: 24px;
 	font-weight: 300;
 	line-height: 32px;
-	max-width: 830px;
 	margin-bottom: 30px;
+	position: relative;
+	display: flex;
+	max-width: 1336px;
+	justify-content: space-between;
 }
 
 .news__list {
 	padding: 0;
 	display: flex;
 	flex-wrap: wrap;
+	margin-right: 0;
+	margin-left: -15px;
 	position: relative;
-	max-width: 1400px;
-	width: 100%;
+	max-width: 105%;
+	width: 105%;
 }
 
 .news__item {
@@ -626,7 +631,6 @@ input[type="radio"].visually-hidden {
 	min-width: 420px;
 	min-height: 628px;
 	margin-bottom: 50px;
-
 	max-width: none;
 }
 
@@ -731,8 +735,11 @@ input[type="radio"].visually-hidden {
 }
 
 .news__to-all-news {
-	top: 250px;
-	right: -45px;
+	position: absolute;
+	z-index: 99;
+
+	top: 330px;
+	right: -75px;
 
 	background-color: white;
 	opacity: 0.8;
@@ -1194,6 +1201,12 @@ input[type="radio"].visually-hidden {
 	width: 100%;
 	max-width: 1400px;
 	font-size: 22px;
+}
+
+.page--news .news__item {
+	padding: 0;
+	margin-left: 15px;
+	margin-right: 15px;
 }
 
 .page--news .news__item {
