@@ -58,15 +58,17 @@
 
 (function() {
 	const orderPopup = document.querySelector(`.modal--buy`);
-	const formOrderCloseBtn = orderPopup.querySelector(`.modal__popup-close`);
+	if (orderPopup) {
+		const formOrderCloseBtn = orderPopup.querySelector(`.modal__popup-close`);
 
-	const closePopup = (evt) => {
-		evt.preventDefault();
-		$('.modal--buy').modal('hide');
-	};
+		const closePopup = (evt) => {
+			evt.preventDefault();
+			$('.modal--buy').modal('hide');
+		};
 
-	formOrderCloseBtn.addEventListener('click', closePopup);
-	document.addEventListener('keydown', function(evt) {
-		return (evt.which === 27) && closePopup(evt);
-	});
+		formOrderCloseBtn.addEventListener('click', closePopup);
+		document.addEventListener('keydown', function(evt) {
+			return (evt.which === 27) && closePopup(evt);
+		});
+	}
 })();
