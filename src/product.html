@@ -1,5 +1,5 @@
-<!--main page-->
 <!doctype html>
+
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -15,10 +15,10 @@
 	<link rel="stylesheet" href="css/swiper.min.css">
 
 	<link rel="stylesheet" href="css/style.css">
-	<!--	<link rel="stylesheet" href="css/style.min.css">-->
 
-	<title>Новости</title>
+	<title>Single Product</title>
 </head>
+
 
 <body>
 <header class="header">
@@ -30,10 +30,10 @@
 						<span class="visually-hidden">Поиск</span>
 						<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
 								 id="Слой_1" x="0px" y="0px" viewBox="0 0 490 490" style="enable-background:new 0 0 490 490;" xml:space="preserve">
-								<g>
-									<path class="st0" d="M484,455.2L366.2,337.4c29.2-35.6,46.8-81.2,46.8-130.9C413,92.5,320.5,0,206.5,0C92.4,0,0,92.5,0,206.5   S92.4,413,206.5,413c49.7,0,95.2-17.5,130.8-46.7L455.1,484c8,8,20.9,8,28.9,0C492,476.1,492,463.1,484,455.2z M206.5,371.9   C115.2,371.9,41,297.7,41,206.5S115.2,41,206.5,41C297.7,41,372,115.3,372,206.5S297.7,371.9,206.5,371.9z"/>
-								</g>
-							</svg>
+									<g>
+										<path class="st0" d="M484,455.2L366.2,337.4c29.2-35.6,46.8-81.2,46.8-130.9C413,92.5,320.5,0,206.5,0C92.4,0,0,92.5,0,206.5   S92.4,413,206.5,413c49.7,0,95.2-17.5,130.8-46.7L455.1,484c8,8,20.9,8,28.9,0C492,476.1,492,463.1,484,455.2z M206.5,371.9   C115.2,371.9,41,297.7,41,206.5S115.2,41,206.5,41C297.7,41,372,115.3,372,206.5S297.7,371.9,206.5,371.9z"/>
+									</g>
+								</svg>
 					</a>
 				</li>
 				<li>
@@ -158,141 +158,192 @@
 </header>
 
 <main>
-	<section class="news page--news news__wrapper">
-		<div class="news__inner">
-			<h3 class="news__title">Новости</h3>
+	<section class="promo">
+		<div class="swiper-container promo-swiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide" style="background-image: url('img/content/set-promo.jpg')" aria-label="Slide 1"></div>
+				<div class="swiper-slide" style="background-image: url('img/content/promo-slider.jpg')" aria-label="Slide 2"></div>
+				<div class="swiper-slide" style="background-image: url('img/content/catalog-promo.jpg')" aria-label="Slide 3"></div>
+			</div>
+
+			<div class="swiper-button-next next-arrow next-arrow--promo"></div>
+			<div class="swiper-button-prev prev-arrow prev-arrow--promo"></div>
+		</div>
+	</section>
+
+	<section class="set">
+		<div class="set__wrapper">
+
+			<section class="set-popular">
+				<ul class="set__list">
+					<li class="set-item single-set">
+						<h3 class="single-set__title">Кровать Клеопатра</h3>
+
+						<div class="single-set__inner row">
+							<div class="single-set__left-side col-12 col-xl-9">
+								<div class="single-set__preview">
+									<img src="img/set/set-bedroom-main.jpg" alt="Фото - Превью Сета 'Спальня'">
+								</div>
+
+								<div class="swiper-container single-set__slider" id="sw1">
+									<div class="set-slider swiper-wrapper">
+										<div class="set-slider__img-wrapper swiper-slide">
+											<img src="img/set/slider-bedroom-1.jpg" alt="изображение Сета 'Кровать' 1">
+										</div>
+										<div class="set-slider__img-wrapper swiper-slide">
+											<img src="img/set/slider-bedroom-2.jpg" alt="изображение Сета 'Кровать' 2">
+										</div>
+										<div class="set-slider__img-wrapper swiper-slide">
+											<img src="img/set/slider-bedroom-3.jpg" alt="изображение Сета 'Кровать' 3">
+										</div>
+										<div class="set-slider__img-wrapper swiper-slide">
+											<img src="img/set/slider-bedroom-4.jpg" alt="изображение Сета 'Кровать' 4">
+										</div>
+										<div class="set-slider__img-wrapper swiper-slide">
+											<img src="img/set/slider-bedroom-3.jpg" alt="изображение Сета 'Кровать' 5">
+										</div>
+									</div>
+
+									<div class="swiper-button-next set-slider--next-arrow next-arrow"></div>
+									<div class="swiper-button-prev set-slider--prev-arrow prev-arrow"></div>
+								</div>
+							</div>
+
+							<div class="single-set__right-side material col-12 col-xl-3">
+								<div class="material-color__wrapper">
+									<h4 class="material__title">Доступные цвета</h4>
+									<p class="material__hint">
+										(Нажмите для просмотра фото)
+									</p>
+
+									<ul class="material__colors-list">
+										<li class="material__colors-item color">
+											<figure>
+												<img src="img/set/color-1.jpg" alt="Эмаль белая">
+												<figcaption>Эмаль белая</figcaption>
+											</figure>
+										</li>
+										<li class="material__colors-item color">
+											<figure>
+												<img src="img/set/color-2.jpg" alt="Эмаль крем">
+												<figcaption>Эмаль крем</figcaption>
+											</figure>
+										</li>
+										<li class="material__colors-item color">
+											<figure>
+												<img src="img/set/color-3.jpg" alt="Орех лесной коричневая патина">
+												<figcaption>Орех лесной коричневая патина</figcaption>
+											</figure>
+										</li>
+										<li class="material__colors-item color">
+											<figure>
+												<img src="img/set/color-4.jpg" alt="Орех темный черная патина">
+												<figcaption>Орех темный черная патина</figcaption>
+											</figure>
+										</li>
+									</ul>
+								</div>
+								<div class="material-priceInfo__wrapper">
+									<div class="material__sizes sizes">
+										<h4>Размеры</h4>
+										<ul>
+											<li>
+												<p class="key">Высота:</p>
+												<p class="value"><b>1060</b><span class="value__measure">см</span></p>
+											</li>
+											<li>
+												<p class="key">Ширина:</p>
+												<p class="value"><b>1710</b><span class="value__measure">см</span></p>
+											</li>
+											<li>
+												<p class="key">Глубина:</p>
+												<p class="value"><b>2330</b><span class="value__measure"></span></p>
+											</li>
+										</ul>
+										<h4 class="sizes__material">Материал изголовья</h4>
+										<p class="sizes__material-info">Белый кожзам</p>
+									</div>
+
+									<div class="single-set__order">
+										<p class="single-set__price">7699 грн</p>
+										<a href="" class="btn single-set__order-link">ЗАКАЗАТЬ</a>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+						<p class="single-set__description">
+							Фабрика мебели "Buczynski" является производителем мебели из натурального дерева и шпонированной плиты. Мы используем новейшие технологии и современное оборудование таких передовых производителей, как Италия и Польша. Наша цель – сохранение древних традиций в сочетании с современностью. Наше качество растет с нашими клиентами, как меняется мир - меняемся и мы.
+						</p>
+					</li>
+
+
+				</ul>
+			</section>
+
+		</div>
+	</section>
+
+	<section class="recommended">
+		<h2 class="recommended__title">Рекомендуем посмотреть</h2>
+
+		<ul class="top-products__list row">
+			<li class="col-12 col-xl-7">
+				<a href="" class="top-products__link product" style="background-image: url('img/content/product1.jpg')">
+					<div class="product__layer">
+						<p class="product__flag product__flag--sale"></p>
+						<h3 class="product__title">ДЖЕНИФЕР</h3>
+						<p class="product__description">Орех лесной + патина в глянцевом лаке</p>
+					</div>
+					<span class="product__btn">Посмотреть</span>
+				</a>
+			</li>
+			<li class="col-12 col-xl-5">
+				<a href="" class="top-products__link product product--with-flag" style="background-image: url('img/content/product2.jpg')">
+					<div class="product__layer">
+						<p class="product__flag product__flag--sale"></p>
+						<h3 class="product__title">АМИНА</h3>
+						<p class="product__description">Эмаль белая</p>
+					</div>
+					<span class="product__btn">Посмотреть</span>
+				</a>
+			</li>
+			<li class="col-12 col-xl-6">
+				<a href="" class="top-products__link product product--with-flag" style="background-image: url('img/content/product3.jpg')">
+					<div class="product__layer">
+						<p class="product__flag product__flag--new"></p>
+						<h3 class="product__title">ДЖЕНИФЕР</h3>
+						<p class="product__description">
+							Орех лесной Дуб молочный Эмаль белая Орех лесной Дуб молочный Эмаль белая
+						</p>
+					</div>
+					<span class="product__btn">Посмотреть</span>
+				</a>
+			</li>
+			<li class="col-12 col-xl-6">
+				<a href="" class="top-products__link product product--with-flag" style="background-image: url('img/content/product4.jpg')">
+					<div class="product__layer">
+						<p class="product__flag product__flag--popular"></p>
+						<h3 class="product__title">КАБИНЕТ РИВЬЕРА</h3>
+						<p class="product__description">Орех лесной + патина в глянцевом лаке</p>
+					</div>
+					<span class="product__btn">Посмотреть</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+
+	<section class="news">
+		<div class="news__wrapper">
+			<h3 class="news__title">
+				Новости
+			</h3>
 			<p class="news__description">
-				Фабрика мебели "Buczynski" является производителем мебели из натурального дерева и шпонированной плиты. Мы
-				используем новейшие технологии и современное оборудование таких передовых производителей, как Италия и Польша.
+				Мы регалярно делимся последними новостями в нашем блоге <br>
+				Проверьте наши последние мысли прямо сейчас!
 			</p>
-
 			<ul class="news__list row">
-				<li class="news__item col-12 col-xl-4">
-					<a href="" class="news__link single-news">
-						<div class="single-news__wrapper">
-							<img src="img/content/news-first.jpg" alt="Каритнка Первой новость">
-						</div>
-						<div class="single-news__content">
-							<div class="single-news__date">
-								<div class="single-news__date-wrapper">
-									<span class="single-news__day">18</span>
-									<span class="single-news__month">июня</span>
-									<span class="single-news__year">2019</span>
-								</div>
-							</div>
-							<div class="single-news__info">
-								<h4>Советы, как добавить цвет в однотонный интерьер</h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda cumque natus porro tempore vero! Commodi eligendi enim inventore iure quibusdam, sunt voluptatem?</p>
-							</div>
-						</div>
-					</a>
-				</li>
-				<li class="news__item col-12 col-xl-4">
-					<a href="" class="news__link single-news">
-						<div class="single-news__wrapper">
-							<img src="img/content/news-second.jpg" alt="Картинка второй новости">
-						</div>
-						<div class="single-news__content">
-							<div class="single-news__date">
-								<div class="single-news__date-wrapper">
-									<span class="single-news__day">24</span>
-									<span class="single-news__month">мая</span>
-									<span class="single-news__year">2019</span>
-								</div>
-							</div>
-							<div class="single-news__info">
-								<h4>Руководство по решениям квартир: стиль + хранение</h4>
-								<p>Монохроматический цвет коренится в теории цвета и требует больше, чем просто выбрать цвет и
-									придумать для него все...</p>
-							</div>
-						</div>
-					</a>
-				</li>
-				<li class="news__item col-12 col-xl-4">
-					<a href="" class="news__link single-news">
-						<div class="single-news__wrapper">
-							<img src="img/content/news-third.jpg" alt="Картинка третьей новости">
-						</div>
-						<div class="single-news__content">
-							<div class="single-news__date">
-								<div class="single-news__date-wrapper">
-									<span class="single-news__day">11</span>
-									<span class="single-news__month">мая</span>
-									<span class="single-news__year">2019</span>
-								</div>
-							</div>
-							<div class="single-news__info">
-								<h4>9 простых советов, которые помогут снять стресс в домашних условия</h4>
-								<p>Ограниченное количество места и складских помещений может стать причиной всевозможных дилем в
-									арендуемых квартирах</p>
-							</div>
-						</div>
-					</a>
-				</li>
-
-				<li class="news__item col-12 col-xl-4">
-					<a href="" class="news__link single-news">
-						<div class="single-news__wrapper">
-							<img src="img/content/news-first.jpg" alt="Каритнка Первой новость">
-						</div>
-						<div class="single-news__content">
-							<div class="single-news__date">
-								<div class="single-news__date-wrapper">
-									<span class="single-news__day">18</span>
-									<span class="single-news__month">июня</span>
-									<span class="single-news__year">2019</span>
-								</div>
-							</div>
-							<div class="single-news__info">
-								<h4>Советы, как добавить цвет в однотонный интерьер</h4>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda cumque natus porro tempore vero! Commodi eligendi enim inventore iure quibusdam, sunt voluptatem?</p>
-							</div>
-						</div>
-					</a>
-				</li>
-				<li class="news__item col-12 col-xl-4">
-					<a href="" class="news__link single-news">
-						<div class="single-news__wrapper">
-							<img src="img/content/news-second.jpg" alt="Картинка второй новости">
-						</div>
-						<div class="single-news__content">
-							<div class="single-news__date">
-								<div class="single-news__date-wrapper">
-									<span class="single-news__day">24</span>
-									<span class="single-news__month">мая</span>
-									<span class="single-news__year">2019</span>
-								</div>
-							</div>
-							<div class="single-news__info">
-								<h4>Руководство по решениям квартир: стиль + хранение</h4>
-								<p>Монохроматический цвет коренится в теории цвета и требует больше, чем просто выбрать цвет и
-									придумать для него все...</p>
-							</div>
-						</div>
-					</a>
-				</li>
-				<li class="news__item col-12 col-xl-4">
-					<a href="" class="news__link single-news">
-						<div class="single-news__wrapper">
-							<img src="img/content/news-third.jpg" alt="Картинка третьей новости">
-						</div>
-						<div class="single-news__content">
-							<div class="single-news__date">
-								<div class="single-news__date-wrapper">
-									<span class="single-news__day">11</span>
-									<span class="single-news__month">мая</span>
-									<span class="single-news__year">2019</span>
-								</div>
-							</div>
-							<div class="single-news__info">
-								<h4>9 простых советов, которые помогут снять стресс в домашних условия</h4>
-								<p>Ограниченное количество места и складских помещений может стать причиной всевозможных дилем в
-									арендуемых квартирах</p>
-							</div>
-						</div>
-					</a>
-				</li>
-
 				<li class="news__item col-12 col-xl-4">
 					<a href="" class="news__link single-news">
 						<div class="single-news__wrapper">

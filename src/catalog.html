@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400%7COswald:300,400&display=swap"
+				rel="stylesheet">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/all.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+
+	<link rel="stylesheet" href="css/style.css">
+	<!--	<link rel="stylesheet" href="css/style.min.css">-->
+
+	<title>Каталог товаров</title>
+</head>
+
+<body>
+<header class="header">
+	<div class="header__wrapper header-container">
+		<div class="icons-mobile">
+			<ul class="site-icons">
+				<li>
+					<a href="" class="site-icons__link">
+						<span class="visually-hidden">Поиск</span>
+						<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+								 id="Слой_1" x="0px" y="0px" viewBox="0 0 490 490" style="enable-background:new 0 0 490 490;" xml:space="preserve">
+								<g>
+									<path class="st0" d="M484,455.2L366.2,337.4c29.2-35.6,46.8-81.2,46.8-130.9C413,92.5,320.5,0,206.5,0C92.4,0,0,92.5,0,206.5   S92.4,413,206.5,413c49.7,0,95.2-17.5,130.8-46.7L455.1,484c8,8,20.9,8,28.9,0C492,476.1,492,463.1,484,455.2z M206.5,371.9   C115.2,371.9,41,297.7,41,206.5S115.2,41,206.5,41C297.7,41,372,115.3,372,206.5S297.7,371.9,206.5,371.9z"/>
+								</g>
+							</svg>
+					</a>
+				</li>
+				<li>
+					<a href="" class="site-icons__link site-icons__link-cart">
+						<span class="visually-hidden">Корзина</span>
+						<span class="cart-count">0</span>
+						<svg width="33" height="31" aria-hidden="true" focusable="false" data-prefix="fal"
+								 data-icon="shopping-cart"
+								 role="img"
+								 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-shopping-cart fa-w-18 fa-5x">
+							<path d="M551.991 64H129.28l-8.329-44.423C118.822 8.226 108.911 0 97.362 0H12C5.373 0 0 5.373 0 12v8c0 6.627 5.373 12 12 12h78.72l69.927 372.946C150.305 416.314 144 431.42 144 448c0 35.346 28.654 64 64 64s64-28.654 64-64a63.681 63.681 0 0 0-8.583-32h145.167a63.681 63.681 0 0 0-8.583 32c0 35.346 28.654 64 64 64 35.346 0 64-28.654 64-64 0-17.993-7.435-34.24-19.388-45.868C506.022 391.891 496.76 384 485.328 384H189.28l-12-64h331.381c11.368 0 21.177-7.976 23.496-19.105l43.331-208C578.592 77.991 567.215 64 551.991 64zM240 448c0 17.645-14.355 32-32 32s-32-14.355-32-32 14.355-32 32-32 32 14.355 32 32zm224 32c-17.645 0-32-14.355-32-32s14.355-32 32-32 32 14.355 32 32-14.355 32-32 32zm38.156-192H171.28l-36-192h406.876l-40 192z" class=""></path>
+						</svg>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<a href="" class="site-logo">
+			<img src="img/others/logo.png" alt="">
+		</a>
+
+		<nav class="site-nav">
+			<aside class="left-header">
+				<nav class="left-header__nav">
+					<ul class="left-nav__list">
+						<li class="left-nav__item">
+							<a href="" class="left-nav__link">О нас</a>
+						</li>
+						<li class="left-nav__item">
+							<a href="" class="left-nav__link">Продукция</a>
+						</li>
+						<li class="left-nav__item">
+							<a href="" class="left-nav__link">Услуги</a>
+						</li>
+						<li class="left-nav__item">
+							<a href="" class="left-nav__link">Где купить</a>
+						</li>
+						<li class="left-nav__item">
+							<a href="" class="left-nav__link">Новости</a>
+						</li>
+						<li class="left-nav__item">
+							<a href="" class="left-nav__link left-nav__link--contacts">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+
+				<section class="contacts">
+					<a class="contacts__link" href="tel:+78125556666">+7 (812) 555-66-66</a>
+
+					<a class="contacts__link" href="mailto:buchmebel@gmail.com">buchmebel@gmail.com</a>
+
+					<div class="contacts__additional">
+						<ul class="contacts__social social">
+							<li class="social__item">
+								<a href="" class="social__link social__link--insta">
+									<span class="fab fab fa-instagram"></span>
+								</a>
+							</li>
+							<li class="social__item">
+								<a href="" class="social__link social__link--pinterest">
+									<span class="fab fa-pinterest-p"></span>
+								</a>
+							</li>
+							<li class="social__item">
+								<a href="" class="social__link social__link--fb">
+									<span class="fab fa-facebook-f"></span>
+								</a>
+							</li>
+						</ul>
+
+						<ul class="contacts__languages languages">
+							<li class="languages__item">
+								<a href="" class="languages__link" aria-label="RU">
+									<img src="img/others/RU.gif" alt="Русский флаг">
+								</a>
+							</li>
+							<li class="languages__item">
+								<a href="" class="languages__link" aria-label="UA">
+									<img src="img/others/UA.gif" alt="Украинский флаг">
+								</a>
+							</li>
+							<li class="languages__item">
+								<a href="" class="languages__link" aria-label="PL">
+									<img src="img/others/PL.gif" alt="Польский флаг">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</aside>
+			<div class="site-nav__wrapper">
+				<ul class="site-nav__list">
+					<li class="site-nav__item site-nav__item--dropDown">
+						<a href="#" class="site-nav__link">Спальни</a>
+
+						<ul class="dropdowm-menu">
+							<li><a href="#">Подпункт 1</a></li>
+							<!--	current-section - class of the page where we are-->
+							<!--	<li><a href="#" class="current-section" >Подпункт 2</a></li>-->
+							<li><a href="#">Подпункт 2</a></li>
+							<li><a href="#">Подпункт 3</a></li>
+							<li><a href="#">Подпункт 4</a></li>
+						</ul>
+					</li>
+
+					<li class="site-nav__item">
+						<a href="#" class="site-nav__link">Гостинные</a>
+					</li>
+					<li class="site-nav__item">
+						<a href="#" class="site-nav__link">Кабинеты</a>
+					</li>
+					<li class="site-nav__item">
+						<a href="#" class="site-nav__link">Подростковые комнаты</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<div class="menu">
+			<div class="hambergerIcon"></div>
+		</div>
+	</div>
+</header>
+
+<main>
+	<section class="promo">
+		<div class="swiper-container promo-swiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide" style="background-image: url('img/content/catalog-promo.jpg')" aria-label="Slide 1"></div>
+				<div class="swiper-slide" style= "background-image: url('img/content/promo-slider.jpg')"
+						 aria-label="Slide 2"></div>
+				<div class="swiper-slide" style="background-image: url('img/content/set-promo.jpg')"
+						 aria-label="Slide 3"></div>
+			</div>
+
+			<!-- Add Arrows -->
+			<div class="swiper-button-next next-arrow next-arrow--promo"></div>
+			<div class="swiper-button-prev prev-arrow prev-arrow--promo"></div>
+		</div>
+	</section>
+
+	<section class="top-products">
+		<ul class="top-products__list row">
+			<li class="col-12 col-xl-7">
+				<a href="" class="top-products__link product product--with-flag" style="background-image: url('img/content/product1.jpg')">
+					<div class="product__layer">
+						<p class="product__flag product__flag--sale"></p>
+						<h3 class="product__title">ДЖЕНИФЕР</h3>
+						<p class="product__description">Орех лесной + патина в глянцевом лаке</p>
+					</div>
+					<span class="product__btn">Посмотреть</span>
+				</a>
+			</li>
+			<li class="col-12 col-xl-5">
+				<a href="" class="top-products__link product" style="background-image: url('img/content/product2.jpg')">
+					<div class="product__layer">
+						<p class="product__flag product__flag--sale"></p>
+						<h3 class="product__title">АМИНА</h3>
+						<p class="product__description">Эмаль белая</p>
+					</div>
+					<span class="product__btn">Посмотреть</span>
+				</a>
+			</li>
+			<li class="col-12 col-xl-6">
+				<a href="" class="top-products__link product product--with-flag" style="background-image: url('img/content/product3.jpg')">
+					<div class="product__layer">
+						<p class="product__flag product__flag--popular"></p>
+						<h3 class="product__title">ДЖЕНИФЕР</h3>
+						<p class="product__description">
+							Орех лесной Дуб молочный Эмаль белая Орех лесной Дуб молочный Эмаль белая
+						</p>
+					</div>
+					<span class="product__btn">Посмотреть</span>
+				</a>
+			</li>
+			<li class="col-12 col-xl-6">
+				<a href="" class="top-products__link product product--with-flag" style="background-image: url('img/content/product4.jpg')">
+					<div class="product__layer">
+						<p class="product__flag product__flag--new"></p>
+						<h3 class="product__title">КАБИНЕТ РИВЬЕРА</h3>
+						<p class="product__description">Орех лесной + патина в глянцевом лаке</p>
+					</div>
+					<span class="product__btn">Посмотреть</span>
+				</a>
+			</li>
+			<li class="col-12 col-xl-5">
+				<a href="" class="top-products__link product" style="background-image: url('img/content/product2.jpg')">
+					<div class="product__layer">
+						<p class="product__flag product__flag--sale"></p>
+						<h3 class="product__title">АДЕЛЬ</h3>
+						<p class="product__description">Дуб молочный</p>
+					</div>
+					<span class="product__btn">Посмотреть</span>
+				</a>
+			</li>
+			<li class="col-12 col-xl-7">
+				<a href="" class="top-products__link product product--with-flag" style="background-image: url('img/content/product1.jpg')">
+					<div class="product__layer">
+						<p class="product__flag product__flag--popular"></p>
+						<h3 class="product__title">КЛЕОПАТРА</h3>
+						<p class="product__description">Орех лесной + патина в глянцевом лаке</p>
+					</div>
+					<span class="product__btn">Посмотреть</span>
+				</a>
+			</li>
+		</ul>
+
+
+	</section>
+
+	<section class="news">
+		<div class="news__wrapper">
+			<h3 class="news__title">
+				Новости
+			</h3>
+			<p class="news__description">
+				Мы регулярно делимся последними новостями в нашем блоге <br>
+				Проверьте наши последние мысли прямо сейчас!
+			</p>
+			<ul class="news__list row">
+				<li class="news__item col-12 col-xl-4">
+					<a href="" class="news__link single-news">
+						<div class="single-news__wrapper">
+							<img src="img/content/news-first.jpg" alt="Каритнка Первой новость">
+						</div>
+						<div class="single-news__content">
+							<div class="single-news__date">
+								<div class="single-news__date-wrapper">
+									<span class="single-news__day">18</span>
+									<span class="single-news__month">июня</span>
+									<span class="single-news__year">2019</span>
+								</div>
+							</div>
+							<div class="single-news__info">
+								<h4>Советы, как добавить цвет в однотонный интерьер</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda cumque natus porro tempore vero! Commodi eligendi enim inventore iure quibusdam, sunt voluptatem?</p>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="news__item col-12 col-xl-4">
+					<a href="" class="news__link single-news">
+						<div class="single-news__wrapper">
+							<img src="img/content/news-second.jpg" alt="Картинка второй новости">
+						</div>
+						<div class="single-news__content">
+							<div class="single-news__date">
+								<div class="single-news__date-wrapper">
+									<span class="single-news__day">24</span>
+									<span class="single-news__month">мая</span>
+									<span class="single-news__year">2019</span>
+								</div>
+							</div>
+							<div class="single-news__info">
+								<h4>Руководство по решениям квартир: стиль + хранение</h4>
+								<p>Монохроматический цвет коренится в теории цвета и требует больше, чем просто выбрать цвет и
+									придумать для него все...</p>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="news__item col-12 col-xl-4">
+					<a href="" class="news__link single-news">
+						<div class="single-news__wrapper">
+							<img src="img/content/news-third.jpg" alt="Картинка третьей новости">
+						</div>
+						<div class="single-news__content">
+							<div class="single-news__date">
+								<div class="single-news__date-wrapper">
+									<span class="single-news__day">11</span>
+									<span class="single-news__month">мая</span>
+									<span class="single-news__year">2019</span>
+								</div>
+							</div>
+							<div class="single-news__info">
+								<h4>9 простых советов, которые помогут снять стресс в домашних условия</h4>
+								<p>Ограниченное количество места и складских помещений может стать причиной всевозможных дилем в
+									арендуемых квартирах</p>
+							</div>
+						</div>
+					</a>
+				</li>
+
+				<!--		ссылка ведет на страницу со всеми новостями		-->
+				<a href="#" class="news__link news__to-all-news next-arrow"></a>
+			</ul>
+		</div>
+	</section>
+</main>
+
+<footer class="footer">
+	<div class="footer__wrapper row">
+
+		<!--	форма связи-->
+		<div class="footer__form form col-12 col-xl-6">
+			<div class="form__wrapper">
+				<h3 class="form__title">Вас заинтересовала наша продукция?</h3>
+				<p class="form__intro">
+					Оставьте ваш номер и мы вам перезвоним
+				</p>
+				<form action="https://echo.htmlacademy.ru" method="post">
+					<ul class="form__list">
+						<li class="form__item">
+							<label class="form__label visually-hidden" for="name">Ваше имя (обязательно)</label>
+							<input class="form__input" id="name" type="text" name="name"
+										 placeholder="Ваше имя (обязательно)">
+						</li>
+
+						<li class="form__item">
+							<label class="form__label visually-hidden" for="phone">Ваш телефон (обязательно)</label>
+							<input class="form__input" id="phone" type="tel" name="phone" placeholder="Ваш телефон (обязательно)">
+						</li>
+
+						<li class="form__item">
+							<label class="form__label visually-hidden" for="message">Ваше сообщение</label>
+							<textarea class="form__textarea form__input" id="message" name="message" placeholder="Ваше сообщение"></textarea>
+						</li>
+					</ul>
+
+					<div class="form__submit">
+						<button class="form__button product__btn" type="submit">Отправить</button>
+					</div>
+				</form>
+
+				<div class="footer__contacts">
+					<address>
+						Украина <br>
+						Житомирская обл. <br>
+						Житомирский р-н. <br>
+						12404, с. Березина
+					</address>
+
+					<p class="footer__email">
+						<span>e-mail:</span>
+						<a href="mailto:buchmebel@gmail.com">buchmebel@gmail.com</a>
+					</p>
+				</div>
+			</div>
+
+		</div>
+
+		<!--	подрубаем чат disqus		-->
+		<div class="footer__disqus disqus col-12 col-xl-6">
+			<div id="disqus_thread" class="disqus__tread"></div>
+			<script>
+				/**
+				 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+				 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+				 */
+
+				var disqus_config = function () {
+					this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+					this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+				};
+
+				(function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
+					var d = document, s = d.createElement('script');
+
+					s.src = 'https://buczynski.disqus.com/embed.js';  // IMPORTANT: Replace EXAMPLE with your forum shortname!
+
+					s.setAttribute('data-timestamp', +new Date());
+					(d.head || d.body).appendChild(s);
+				})();
+			</script>
+			<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+		</div>
+
+
+	</div>
+</footer>
+
+<script src="libs/swiper.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
