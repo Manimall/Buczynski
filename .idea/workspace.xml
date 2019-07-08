@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75bf1ba9-c9a7-48d6-b216-d91ebae4ff33" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/cart.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/style.min.css" afterDir="false" />
     </list>
@@ -54,8 +53,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="401">
-              <caret line="2207" column="20" selection-end-line="2654" />
+            <state relative-caret-position="268">
+              <caret line="1677" column="21" lean-forward="true" selection-start-line="1677" selection-start-column="21" selection-end-line="1677" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -63,8 +62,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/css/style.min.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="2672" column="21" lean-forward="true" selection-start-line="2672" selection-start-column="21" selection-end-line="2672" selection-end-column="21" />
+            <state relative-caret-position="740">
+              <caret line="3192" selection-start-line="3192" selection-end-line="3192" />
             </state>
           </provider>
         </entry>
@@ -267,7 +266,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>modal-error</find>
       <find>place</find>
       <find>1060</find>
       <find>@media (min</find>
@@ -297,6 +295,7 @@
       <find>body--overflow</find>
       <find>body--ove</find>
       <find>scroll</find>
+      <find>overflow-y:</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -452,12 +451,12 @@
       <workItem from="1562581622008" duration="502000" />
       <workItem from="1562583690073" duration="268000" />
       <workItem from="1562584077078" duration="2550000" />
-      <workItem from="1562617800812" duration="3839000" />
+      <workItem from="1562617800812" duration="4435000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="268440000" />
+    <option name="totallyTimeSpent" value="269036000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -902,15 +901,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="2207" column="20" selection-end-line="2654" />
+        <state relative-caret-position="268">
+          <caret line="1677" column="21" lean-forward="true" selection-start-line="1677" selection-start-column="21" selection-end-line="1677" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/css/style.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="2672" column="21" lean-forward="true" selection-start-line="2672" selection-start-column="21" selection-end-line="2672" selection-end-column="21" />
+        <state relative-caret-position="740">
+          <caret line="3192" selection-start-line="3192" selection-end-line="3192" />
         </state>
       </provider>
     </entry>

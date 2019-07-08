@@ -2009,6 +2009,7 @@ input[type="radio"].visually-hidden {
 	align-items: center;
 	padding-top: 40px;
 	overflow-y: scroll;
+	-webkit-overflow-scrolling:touch;
 	-webkit-box-shadow: 2px 3px 7px 0px #000000;
 	box-shadow: 2px 3px 7px 0px #000000;
 	max-height: 794px;
@@ -2553,7 +2554,8 @@ input[type="radio"].visually-hidden {
 		top: 0;
 		height: 100%;
 
-		overflow-y: auto;
+		overflow-y: scroll;
+		-webkit-overflow-scrolling:touch;
 		padding: 70px 30px 0 30px;
 		left: 0;
 		z-index: 9;
