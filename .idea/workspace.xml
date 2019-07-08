@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75bf1ba9-c9a7-48d6-b216-d91ebae4ff33" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/cart.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/style.min.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -51,20 +50,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
-              <caret line="2211" column="23" lean-forward="true" selection-start-line="2211" selection-start-column="23" selection-end-line="2211" selection-end-column="23" />
+            <state relative-caret-position="306">
+              <caret line="2124" column="12" lean-forward="true" selection-end-line="2653" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/css/style.min.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="2675" column="18" lean-forward="true" selection-start-line="2675" selection-start-column="18" selection-end-line="2675" selection-end-column="18" />
+            <state relative-caret-position="385">
+              <caret line="2557" column="12" lean-forward="true" selection-start-line="2557" selection-start-column="12" selection-end-line="2557" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -267,7 +266,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>formOrderBtn</find>
       <find>modal-error</find>
       <find>place</find>
       <find>1060</find>
@@ -297,6 +295,7 @@
       <find>overflow-y: a</find>
       <find>body--overflow</find>
       <find>body--ove</find>
+      <find>scroll</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -340,10 +339,10 @@
         <option value="$PROJECT_DIR$/src/where-to-buy.html" />
         <option value="$PROJECT_DIR$/src/catalog.html" />
         <option value="$PROJECT_DIR$/src/news.html" />
-        <option value="$PROJECT_DIR$/src/css/style.min.css" />
         <option value="$PROJECT_DIR$/src/cart.html" />
         <option value="$PROJECT_DIR$/src/js/main.js" />
         <option value="$PROJECT_DIR$/src/css/style.css" />
+        <option value="$PROJECT_DIR$/src/css/style.min.css" />
       </list>
     </option>
   </component>
@@ -452,12 +451,12 @@
       <workItem from="1562581622008" duration="502000" />
       <workItem from="1562583690073" duration="268000" />
       <workItem from="1562584077078" duration="2550000" />
-      <workItem from="1562617800812" duration="3135000" />
+      <workItem from="1562617800812" duration="3449000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="267736000" />
+    <option name="totallyTimeSpent" value="268050000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -870,10 +869,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/style.min.css">
+    <entry file="file://$PROJECT_DIR$/src/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="2675" column="18" lean-forward="true" selection-start-line="2675" selection-start-column="18" selection-end-line="2675" selection-end-column="18" />
+        <state relative-caret-position="323">
+          <caret line="52" column="36" lean-forward="true" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -900,17 +899,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/main.js">
+    <entry file="file://$PROJECT_DIR$/src/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="52" column="36" lean-forward="true" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="36" />
+        <state relative-caret-position="306">
+          <caret line="2124" column="12" lean-forward="true" selection-end-line="2653" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/style.css">
+    <entry file="file://$PROJECT_DIR$/src/css/style.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="2211" column="23" lean-forward="true" selection-start-line="2211" selection-start-column="23" selection-end-line="2211" selection-end-column="23" />
+        <state relative-caret-position="385">
+          <caret line="2557" column="12" lean-forward="true" selection-start-line="2557" selection-start-column="12" selection-end-line="2557" selection-end-column="12" />
         </state>
       </provider>
     </entry>
