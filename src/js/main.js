@@ -54,6 +54,13 @@
 		nav.classList.toggle(`site-nav--active`);
 		siteWrapper.classList.toggle(`body--overflow`);
 	});
+
+	//	тест
+//put this when popup opens, to stop body scrolling
+	bodyScrollLock.disableBodyScroll(nav);
+
+//put this when close popup and show scrollbar in body
+	bodyScrollLock.enableBodyScroll(nav);
 })();
 
 (function() {
