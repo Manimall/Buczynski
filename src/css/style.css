@@ -1675,8 +1675,8 @@ input[type="radio"].visually-hidden {
 	flex-direction: column;
 	align-items: center;
 	padding-top: 40px;
-	overflow-y: scroll;
-	-webkit-overflow-scrolling:touch;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
 	box-shadow: 2px 3px 7px 0px #000000;
 	max-height: 794px;
 }
@@ -2121,8 +2121,8 @@ input[type="radio"].visually-hidden {
 		top: 0;
 		height: 100%;
 
-		overflow-y: scroll;
-		-webkit-overflow-scrolling:touch;
+		overflow: auto;
+		-webkit-overflow-scrolling: touch;
 		padding: 70px 30px 0 30px;
 		left: 0;
 		z-index: 9;
@@ -2135,9 +2135,11 @@ input[type="radio"].visually-hidden {
 	}
 
 	.site-nav--active {
+		overflow: auto;
+		-webkit-overflow-scrolling: touch;
 		transform-origin: top;
 		transform: scaleY(1);
-		background-color: rgba(0, 0, 0, 0.6);
+		background-color: rgba(0, 0, 0, 0.7);
 		flex-direction: column;
 	}
 
