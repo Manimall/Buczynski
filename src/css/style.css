@@ -1733,21 +1733,26 @@ input[type="radio"].visually-hidden {
 	background-color: #cecece;
 }
 
+.single-card {
+	box-shadow: 7px 6px 7px #cecece;
+}
+
 .single-card .single-news__date {
 	flex: 0 0 auto;
 }
 
 .single-card .single-news__info {
 	flex: 0 0 auto;
-	padding: 0 15px;
+	padding: 15px 20px;
 }
 
 .single-card .single-news__info h4 {
 	color: #000000;
 	font-family: var(--oswald);
-	font-size: 48px;
+	font-size: 37px;
 	font-weight: 300;
 	line-height: 1.5;
+	margin-top: 10px;
 	margin-bottom: 30px;
 }
 
@@ -1882,6 +1887,34 @@ input[type="radio"].visually-hidden {
 		order: -1;
 		flex: 1 0 100%;
 	}
+
+	.single-card .single-news__info {
+		 order: -1;
+		 flex: 1 0 100%;
+		 max-width: none;
+		padding-bottom: 40px;
+	}
+
+	.single-card {
+		flex-direction: row;
+		max-width: 800px;
+	}
+
+	.single-card .card__img-wrapper {
+		 flex: 1 0 70%;
+		 max-width: none;
+	}
+
+	.single-card .single-news__date {
+		 flex: 1 0 30%;
+		 max-width: none;
+	}
+
+	.news__main-content-imgWrapper {
+		width: 100%;
+		max-width: 470px;
+		height: auto;
+	}
 }
 
 
@@ -1895,6 +1928,10 @@ input[type="radio"].visually-hidden {
 		box-shadow: none;
 		border: 1px solid rgba(0, 0, 0, 0.3);
 		margin-top: 1px;
+	}
+
+	.news__description {
+		font-size: 22px;
 	}
 }
 
@@ -1914,6 +1951,10 @@ input[type="radio"].visually-hidden {
 
 	.frame__address-list {
 		min-height: auto;
+	}
+
+	.news__description {
+		font-size: 24px;
 	}
 
 	.frame__map-wrapper {
@@ -2383,6 +2424,15 @@ input[type="radio"].visually-hidden {
 	.where-to-buy__wrapper {
 		padding: 80px 20px 20px 20px;
 	}
+
+	.page--news {
+		padding: 160px 30px 0 30px;
+	}
+
+	.single-card {
+		margin-right: 0;
+		margin-left: 0;
+	}
 }
 
 
@@ -2489,6 +2539,14 @@ input[type="radio"].visually-hidden {
 		max-width: 120%;
 		flex: 1 0 100%;
 	}
+
+	.news__main-content-imgWrapper {
+		max-width: 350px;
+	}
+
+	.news .news__wrapper {
+		padding: 60px 45px;
+	}
 }
 
 
@@ -2552,6 +2610,12 @@ input[type="radio"].visually-hidden {
 
 	.modal__title {
 		font-size: 44px;
+	}
+
+	.news__main-content-imgWrapper {
+		max-width: none;
+		width: 100%;
+		margin: 0 0 25px 0;
 	}
 }
 
