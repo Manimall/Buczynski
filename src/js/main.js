@@ -47,12 +47,12 @@
 	const menu = document.querySelector(`.menu`);
 	const burger = menu.querySelector(`.hambergerIcon`);
 	const nav = document.querySelector(`.site-nav`);
-	const body = document.querySelector(`body`);
+	const siteWrapper = document.querySelector(`.site-wrapper`);
 
 	menu.addEventListener(`click`, () => {
 		burger.classList.toggle(`open`);
 		nav.classList.toggle(`site-nav--active`);
-		body.classList.toggle(`body--overflow`);
+		siteWrapper.classList.toggle(`body--overflow`);
 	});
 })();
 
