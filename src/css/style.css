@@ -2205,6 +2205,7 @@ input[type="radio"].visually-hidden {
 
 	.body--overflow {
 		overflow: hidden;
+		position: fixed;
 		/*background-image: url("../img/content/promo-slider.jpg");*/
 	}
 
