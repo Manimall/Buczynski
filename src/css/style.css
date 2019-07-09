@@ -42,6 +42,12 @@ a:visited {
 	text-decoration: none;
 }
 
+input {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
 dl, ol, ul {
 	list-style: none;
 	margin: 0;
@@ -1283,7 +1289,7 @@ input[type="radio"].visually-hidden {
 	font-size: 15px;
 	font-weight: 300;
 	line-height: 24px;
-	max-width: 135px;
+	max-width: 145px;
 	margin-left: 20px;
 }
 
@@ -2162,6 +2168,8 @@ input[type="radio"].visually-hidden {
 
 	.left-header__nav {
 		margin: 0;
+		margin-bottom: 50px;
+		align-items: center;
 	}
 
 	.left-nav__item {
@@ -2251,10 +2259,6 @@ input[type="radio"].visually-hidden {
 		margin-right: 0;
 	}
 
-	.left-header__nav {
-		align-items: center;
-	}
-
 	.site-nav__wrapper {
 		margin-right: 0;
 	}
@@ -2264,7 +2268,7 @@ input[type="radio"].visually-hidden {
 	}
 
 	.contacts {
-		margin-top: 50px;
+		margin-top: 0;
 		margin-bottom: 50px;
 	}
 
@@ -2530,7 +2534,7 @@ input[type="radio"].visually-hidden {
 
 	.cart__control {
 		width: 100%;
-		min-height: auto;
+		min-height: 210px;
 		flex-direction: row;
 		padding: 20px;
 		justify-content: center;
@@ -2540,6 +2544,7 @@ input[type="radio"].visually-hidden {
 	.cart__control-wrapper {
 		margin: 0;
 		position: initial;
+		min-height: auto;
 	}
 
 	.cart__order {
