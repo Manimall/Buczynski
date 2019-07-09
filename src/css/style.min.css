@@ -813,7 +813,8 @@ input[type="radio"].visually-hidden {
 	font-family: var(--oswald);
 	font-size: 36px;
 	font-weight: 300;
-	/* line-height: 1.5; */
+	line-height: 1.4;
+
 	margin-bottom: 30px;
 	/*min-height: 140px;*/
 }
@@ -1062,6 +1063,7 @@ input[type="radio"].visually-hidden {
 	font-size: 72px;
 	font-weight: 300;
 	line-height: 1.5;
+
 	margin-bottom: 60px;
 }
 
@@ -2367,7 +2369,6 @@ input[type="radio"].visually-hidden {
 
 	.frame__address-list {
 		min-height: auto;
-		/* height: auto; */
 		overflow-y: hidden;
 		max-height: initial;
 	}
