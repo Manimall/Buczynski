@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="75bf1ba9-c9a7-48d6-b216-d91ebae4ff33" name="Default Changelist" comment="" />
+    <list default="true" id="75bf1ba9-c9a7-48d6-b216-d91ebae4ff33" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/style.min.css" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -48,8 +51,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="685" column="18" lean-forward="true" selection-start-line="685" selection-start-column="18" selection-end-line="685" selection-end-column="18" />
+            <state relative-caret-position="344">
+              <caret line="2380" column="17" lean-forward="true" selection-start-line="2380" selection-start-column="17" selection-end-line="2380" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -57,8 +60,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/css/style.min.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="3175" column="17" lean-forward="true" selection-start-line="3175" selection-start-column="17" selection-end-line="3175" selection-end-column="17" />
+            <state relative-caret-position="268">
+              <caret line="2875" column="24" selection-start-line="2875" selection-start-column="2" selection-end-line="2875" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -261,7 +264,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>1720</find>
       <find>Спаль</find>
       <find>cart__ti</find>
       <find>.page--news .news__title</find>
@@ -291,6 +293,7 @@
       <find>.frame__address-list</find>
       <find>.single-news__info h4</find>
       <find>height: 205</find>
+      <find>.dropdowm-menu::before</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -335,9 +338,9 @@
         <option value="$PROJECT_DIR$/src/catalog.html" />
         <option value="$PROJECT_DIR$/src/news.html" />
         <option value="$PROJECT_DIR$/src/js/main.js" />
-        <option value="$PROJECT_DIR$/src/css/style.css" />
         <option value="$PROJECT_DIR$/src/css/style.min.css" />
         <option value="$PROJECT_DIR$/src/cart.html" />
+        <option value="$PROJECT_DIR$/src/css/style.css" />
       </list>
     </option>
   </component>
@@ -446,12 +449,12 @@
       <workItem from="1562581622008" duration="502000" />
       <workItem from="1562583690073" duration="268000" />
       <workItem from="1562584077078" duration="2550000" />
-      <workItem from="1562617800812" duration="12150000" />
+      <workItem from="1562617800812" duration="12441000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="276751000" />
+    <option name="totallyTimeSpent" value="277042000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -894,15 +897,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/css/style.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="3175" column="17" lean-forward="true" selection-start-line="3175" selection-start-column="17" selection-end-line="3175" selection-end-column="17" />
+        <state relative-caret-position="268">
+          <caret line="2875" column="24" selection-start-line="2875" selection-start-column="2" selection-end-line="2875" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="685" column="18" lean-forward="true" selection-start-line="685" selection-start-column="18" selection-end-line="685" selection-end-column="18" />
+        <state relative-caret-position="344">
+          <caret line="2380" column="17" lean-forward="true" selection-start-line="2380" selection-start-column="17" selection-end-line="2380" selection-end-column="17" />
         </state>
       </provider>
     </entry>
