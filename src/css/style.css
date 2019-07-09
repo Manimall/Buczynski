@@ -552,7 +552,7 @@ input[type="radio"].visually-hidden {
 	font-family: var(--montserrat);
 	font-size: 24px;
 	font-weight: 300;
-	line-height: 32px;
+	line-height: 1.5;
 	margin-bottom: 0;
 	width: 87%;
 	margin-top: 15px;
@@ -2038,11 +2038,11 @@ input[type="radio"].visually-hidden {
 	}
 
 	.product__layer {
-		padding: 20px 40px 20px 14px;
+		padding: 20px 40px 20px 20px;
 	}
 
 	.top-products__list li:nth-of-type(odd) .product__layer {
-		padding-left: 40px;
+		padding-left: 20px;
 	}
 
 	.hero__description {
@@ -2585,6 +2585,17 @@ input[type="radio"].visually-hidden {
 	.news .news__wrapper {
 		padding: 60px 45px;
 	}
+
+	.product--with-flag .product__flag--sale::before {
+		font-size: 28px;
+		transform: rotate(45deg) translate(46%, 0);
+	}
+
+	.product--with-flag .product__flag--new::before {
+		font-size: 26px;
+		transform: rotate(45deg) translate(64px, -20px);
+	}
+
 }
 
 
