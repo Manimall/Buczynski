@@ -2147,7 +2147,7 @@ input[type="radio"].visually-hidden {
 		-webkit-overflow-scrolling: touch;
 		transform-origin: top;
 		transform: scaleY(1);
-		background-color: rgba(0, 0, 0, 0.7);
+		background-color: rgba(0, 0, 0, 0.8);
 		flex-direction: column;
 	}
 
@@ -2160,9 +2160,8 @@ input[type="radio"].visually-hidden {
 		background-color: transparent;
 		box-shadow: none;
 		opacity: 1;
-
+		display: block;
 		justify-content: flex-start;
-
 		order: 2;
 	}
 
@@ -2261,6 +2260,7 @@ input[type="radio"].visually-hidden {
 
 	.site-nav__wrapper {
 		margin-right: 0;
+		order: 1;
 	}
 
 	.left-header .site-icons {

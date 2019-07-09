@@ -2596,7 +2596,7 @@ input[type="radio"].visually-hidden {
 		-webkit-transform: scaleY(1);
 		-ms-transform: scaleY(1);
 		transform: scaleY(1);
-		background-color: rgba(0, 0, 0, 0.7);
+		background-color: rgba(0, 0, 0, 0.8);
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: normal;
 		-ms-flex-direction: column;
@@ -2613,17 +2613,12 @@ input[type="radio"].visually-hidden {
 		-webkit-box-shadow: none;
 		box-shadow: none;
 		opacity: 1;
-
+		display: block;
 		-webkit-box-pack: start;
-
 		-ms-flex-pack: start;
-
 		justify-content: flex-start;
-
 		-webkit-box-ordinal-group: 3;
-
 		-ms-flex-order: 2;
-
 		order: 2;
 	}
 
@@ -2735,6 +2730,9 @@ input[type="radio"].visually-hidden {
 
 	.site-nav__wrapper {
 		margin-right: 0;
+		-webkit-box-ordinal-group: 2;
+		-ms-flex-order: 1;
+		order: 1;
 	}
 
 	.left-header .site-icons {
