@@ -538,8 +538,8 @@ input[type="radio"].visually-hidden {
 .product--with-flag .product__flag {
 	position: absolute;
 	content: '';
-	width: 163.57px;
-	height: 163.57px;
+	width: 173.57px;
+	height: 173.57px;
 	z-index: 11;
 	top: 0;
 	right: 0;
@@ -3088,7 +3088,7 @@ input[type="radio"].visually-hidden {
 	}
 
 	.product__title {
-		font-size: 48px;
+		font-size: 46px;
 	}
 
 	.frame__map-wrapper {
@@ -3125,12 +3125,17 @@ input[type="radio"].visually-hidden {
 	}
 
 	.product--with-flag .product__flag--popular::before {
-		font-size: 24px;
-		-webkit-transform: rotate(45deg) translate(56px, -5px);
-		-ms-transform: rotate(45deg) translate(56px, -5px);
-		transform: rotate(45deg) translate(56px, -5px);
+		font-size: 23px;
+		-webkit-transform: rotate(45deg) translate(54px, -5px);
+		-ms-transform: rotate(45deg) translate(54px, -5px);
+		transform: rotate(45deg) translate(54px, -5px);
 		top: 0;
 		left: 0;
+	}
+
+	.product__description {
+		font-size: 20px;
+		line-height: 1.4;
 	}
 
 }
