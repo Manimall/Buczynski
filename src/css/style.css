@@ -552,7 +552,7 @@ input[type="radio"].visually-hidden {
 	font-family: var(--montserrat);
 	font-size: 24px;
 	font-weight: 300;
-	line-height: 1.5;
+	line-height: 1.4em;
 	margin-bottom: 0;
 	width: 87%;
 	margin-top: 15px;
@@ -2593,7 +2593,14 @@ input[type="radio"].visually-hidden {
 
 	.product--with-flag .product__flag--new::before {
 		font-size: 26px;
-		transform: rotate(45deg) translate(64px, -20px);
+		transform: rotate(45deg) translate(62px, -20px);
+	}
+
+	.product--with-flag .product__flag--popular::before {
+		font-size: 24px;
+		transform: rotate(45deg) translate(56px, -5px);
+		top: 0;
+		left: 0;
 	}
 
 }
