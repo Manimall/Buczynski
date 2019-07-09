@@ -47,20 +47,13 @@
 	const menu = document.querySelector(`.menu`);
 	const burger = menu.querySelector(`.hambergerIcon`);
 	const nav = document.querySelector(`.site-nav`);
-	const siteWrapper = document.querySelector(`.site-wrapper`);
+	const siteWrapper = document.querySelector(`body`);
 
 	menu.addEventListener(`click`, () => {
 		burger.classList.toggle(`open`);
 		nav.classList.toggle(`site-nav--active`);
 		siteWrapper.classList.toggle(`body--overflow`);
 	});
-
-	//	тест
-//put this when popup opens, to stop body scrolling
-	bodyScrollLock.disableBodyScroll(nav);
-
-//put this when close popup and show scrollbar in body
-	bodyScrollLock.enableBodyScroll(nav);
 })();
 
 (function() {
