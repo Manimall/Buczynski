@@ -2757,9 +2757,11 @@ input[type="radio"].visually-hidden {
 		-webkit-transform: translateX(-150%);
 		-ms-transform: translateX(-150%);
 		transform: translateX(-150%);
-		-webkit-transition: 0.4s all ease;
-		-o-transition: 0.4s all ease;
-		transition: 0.4s all ease;
+		transition: 0.4s -webkit-transform ease;
+		-o-transition: 0.4s transform ease;
+		transition: 0.4s transform ease;
+		transition: 0.4s transform ease, 0.4s -webkit-transform ease;
+		-webkit-transition: 0.4s -webkit-transform ease;
 	}
 
 	.site-icons__hidden {
@@ -3234,5 +3236,7 @@ input[type="radio"].visually-hidden {
 		height: 300px;
 	}
 }
+
+
 
 
