@@ -52,6 +52,7 @@
 	menu.addEventListener(`click`, () => {
 		burger.classList.toggle(`open`);
 		nav.classList.toggle(`site-nav--active`);
+		nav.offsetWidth = nav.offsetWidth;
 		siteWrapper.classList.toggle(`body--overflow`);
 	});
 })();
