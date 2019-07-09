@@ -813,8 +813,7 @@ input[type="radio"].visually-hidden {
 	font-family: var(--oswald);
 	font-size: 36px;
 	font-weight: 300;
-	line-height: 36px;
-
+	/* line-height: 1.5; */
 	margin-bottom: 30px;
 	/*min-height: 140px;*/
 }
@@ -1062,8 +1061,7 @@ input[type="radio"].visually-hidden {
 	font-family: var(--oswald);
 	font-size: 72px;
 	font-weight: 300;
-	line-height: 60px;
-
+	line-height: 1.5;
 	margin-bottom: 60px;
 }
 
@@ -2369,6 +2367,9 @@ input[type="radio"].visually-hidden {
 
 	.frame__address-list {
 		min-height: auto;
+		/* height: auto; */
+		overflow-y: hidden;
+		max-height: initial;
 	}
 
 	.news__description {
@@ -3056,6 +3057,7 @@ input[type="radio"].visually-hidden {
 
 	.cart__control-wrapper {
 		margin: 0;
+		position: initial;
 	}
 
 	.cart__order {
