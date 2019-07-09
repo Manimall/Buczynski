@@ -19,8 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/cart.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" column="50" lean-forward="true" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
+            <state relative-caret-position="475">
+              <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#ul#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" />
@@ -51,8 +51,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="2277" column="21" lean-forward="true" selection-start-line="2277" selection-start-column="21" selection-end-line="2277" selection-end-column="21" />
+            <state relative-caret-position="496">
+              <caret line="2275" column="25" lean-forward="true" selection-start-line="2275" selection-start-column="25" selection-end-line="2275" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -60,8 +60,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/css/style.min.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="3182" lean-forward="true" selection-start-line="3182" selection-end-line="3182" />
+            <state relative-caret-position="379">
+              <caret line="3192" column="1" lean-forward="true" selection-start-line="3192" selection-start-column="1" selection-end-line="3192" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -338,8 +338,8 @@
         <option value="$PROJECT_DIR$/src/catalog.html" />
         <option value="$PROJECT_DIR$/src/news.html" />
         <option value="$PROJECT_DIR$/src/js/main.js" />
-        <option value="$PROJECT_DIR$/src/css/style.css" />
         <option value="$PROJECT_DIR$/src/cart.html" />
+        <option value="$PROJECT_DIR$/src/css/style.css" />
         <option value="$PROJECT_DIR$/src/css/style.min.css" />
       </list>
     </option>
@@ -449,12 +449,12 @@
       <workItem from="1562581622008" duration="502000" />
       <workItem from="1562583690073" duration="268000" />
       <workItem from="1562584077078" duration="2550000" />
-      <workItem from="1562617800812" duration="15313000" />
+      <workItem from="1562617800812" duration="15468000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="279914000" />
+    <option name="totallyTimeSpent" value="280069000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -876,22 +876,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="2277" column="21" lean-forward="true" selection-start-line="2277" selection-start-column="21" selection-end-line="2277" selection-end-column="21" />
+        <state relative-caret-position="496">
+          <caret line="2275" column="25" lean-forward="true" selection-start-line="2275" selection-start-column="25" selection-end-line="2275" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/css/style.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="3182" lean-forward="true" selection-start-line="3182" selection-end-line="3182" />
+        <state relative-caret-position="379">
+          <caret line="3192" column="1" lean-forward="true" selection-start-line="3192" selection-start-column="1" selection-end-line="3192" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cart.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="50" lean-forward="true" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
+        <state relative-caret-position="475">
+          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
           <folding>
             <element signature="n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#ul#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" />

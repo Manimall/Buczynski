@@ -2273,6 +2273,10 @@ input[type="radio"].visually-hidden {
 		padding-bottom: 50px;
 	}
 
+	.contacts__additional {
+		margin-bottom: 10px;
+	}
+
 	.social__link .fab {
 		color: #ffffff;
 		font-weight: 700;
